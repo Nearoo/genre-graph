@@ -23,7 +23,7 @@ webp = webpack {
     entry: 
         app: './app/entry.coffee'
     output:
-        path: path.join(__dirname, 'public', 'javascripts')
+        path: path.join(__dirname, 'public', 'js')
         filename: '[name].bundle.js'
     module: 
         rules: [
@@ -32,11 +32,11 @@ webp = webpack {
                 loader: 'coffee-loader',
             }
         ]
-}
+    }
 
 webpWatch = webp.watch {
-        aggregateTimeout: 300,
-        poll: 1000,
+        aggregateTimeout: 100,
+        poll: 100,
         ignored: /node_modules/,
         infoVverbosity: 'verbose',
     },(err, stats) =>
@@ -51,10 +51,12 @@ app.use express.urlencoded(extended: false)
 app.use cookieParser()
 
 app.use sassMiddleware(
-  src: path.join(__dirname, 'public')
-  dest: path.join(__dirname, 'public')
+  src: path.join(__dirname, 'app', 'style')
+  dest: path.join(__dirname, 'public', 'css')
   indentedSyntax: true
-  sourceMap: true)
+  sourceMap: true
+  debug: true,
+  prefix: '/css')
 
 app.use express.static(path.join(__dirname, 'public'))
 app.use '/', indexRouter
