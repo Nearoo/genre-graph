@@ -21,7 +21,7 @@ app.set 'view engine', 'pug'
 # webpack setup
 webp = webpack {
     entry: 
-        app: './app/index.coffee'
+        app: './app/entry.coffee'
     output:
         path: path.join(__dirname, 'public', 'javascripts')
         filename: '[name].bundle.js'
