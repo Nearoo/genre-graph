@@ -1,0 +1,579 @@
+section.header
+  //
+    <div class="window__actions">
+    <i class="ion-record red"></i>
+    <i class="ion-record yellow"></i>
+    <i class="ion-record green"></i>
+    </div>
+  .page-flows
+    span.flow
+      i.ion-chevron-left
+    span.flow
+      i.ion-chevron-right.disabled
+  .search
+    input(type="text" placeholder="Search")
+  .user
+    .user__notifications
+      i.ion-android-notifications
+    .user__inbox
+      i.ion-archive
+    .user__info
+      span.user__info__img
+        img.img-responsive(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/adam_proPic.jpg" alt="Profile Picture")
+      span.user__info__name
+        span.first Adam
+        span.last Lowenthal
+    .user__actions
+      .dropdown
+        button#dropdownMenu1.dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true")
+          i.ion-chevron-down
+        ul.dropdown-menu.dropdown-menu-right(aria-labelledby="dropdownMenu1")
+          li
+            a(href="#") Private Session
+          li
+            a(href="#") Account
+          li
+            a(href="#") Settings
+          li
+            a(href="#") Log Out
+section.content
+  .content__left
+    section.navigation
+      // Main
+      .navigation__list
+        .navigation__list__header(role="button" data-toggle="collapse" href="#main" aria-expanded="true" aria-controls="main")
+          | Main
+        #main.collapse.in
+          a.navigation__list__item(href="#")
+            i.ion-ios-browsers
+            span Browse
+          a.navigation__list__item(href="#")
+            i.ion-person-stalker
+            span Activity
+          a.navigation__list__item(href="#")
+            i.ion-radio-waves
+            span Radio
+      // /
+      // Your Music
+      .navigation__list
+        .navigation__list__header(role="button" data-toggle="collapse" href="#yourMusic" aria-expanded="true" aria-controls="yourMusic")
+          | Your Music
+        #yourMusic.collapse.in
+          a.navigation__list__item(href="#")
+            i.ion-headphone
+            span Songs
+          a.navigation__list__item(href="#")
+            i.ion-ios-musical-notes
+            span Albums
+          a.navigation__list__item(href="#")
+            i.ion-person
+            span Artists
+          a.navigation__list__item(href="#")
+            i.ion-document
+            span Local Files
+      // /
+      // Playlists
+      .navigation__list
+        .navigation__list__header(role="button" data-toggle="collapse" href="#playlists" aria-expanded="true" aria-controls="playlists")
+          | Playlists
+        #playlists.collapse.in
+          a.navigation__list__item(href="#")
+            i.ion-ios-musical-notes
+            span Doo Wop
+          a.navigation__list__item(href="#")
+            i.ion-ios-musical-notes
+            span Pop Classics
+          a.navigation__list__item(href="#")
+            i.ion-ios-musical-notes
+            span Love $ongs
+          a.navigation__list__item(href="#")
+            i.ion-ios-musical-notes
+            span Hipster
+          a.navigation__list__item(href="#")
+            i.ion-ios-musical-notes
+            span New Music Friday
+          a.navigation__list__item(href="#")
+            i.ion-ios-musical-notes
+            span Techno Poppers
+          a.navigation__list__item(href="#")
+            i.ion-ios-musical-notes
+            span Summer Soothers
+          a.navigation__list__item(href="#")
+            i.ion-ios-musical-notes
+            span Hard Rap
+          a.navigation__list__item(href="#")
+            i.ion-ios-musical-notes
+            span Pop Rap
+          a.navigation__list__item(href="#")
+            i.ion-ios-musical-notes
+            span 5 Stars
+          a.navigation__list__item(href="#")
+            i.ion-ios-musical-notes
+            span Dope Dancin
+          a.navigation__list__item(href="#")
+            i.ion-ios-musical-notes
+            span Sleep
+      // /
+    section.playlist
+      a(href="#")
+        | Electronic/Techno/JumpStyle/Foobar...
+    section.playing
+      .playing__art
+        img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/cputh.jpg" alt="Album Art")
+      .playing__song
+        a.playing__song__name Some Type of Love
+        a.playing__song__artist Charlie Puth
+      .playing__add
+        i.ion-checkmark
+  .content__middle
+    .artist.is-verified
+      .artist__header
+        .artist__info
+          .profile__img
+            img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/g_eazy_propic.jpg" alt="G-Eazy")
+          .artist__info__meta
+            .artist__info__type Artist
+            .artist__info__name G-Eazy
+            .artist__info__actions
+              button.button-dark
+                i.ion-ios-play
+                |                 Play
+              button.button-light Follow
+              button.button-light.more
+                i.ion-ios-more
+        .artist__listeners
+          .artist__listeners__count 15,662,810
+          .artist__listeners__label Monthly Listeners
+        .artist__navigation
+          ul.nav.nav-tabs(role="tablist")
+            li.active(role="presentation")
+              a(href="#artist-overview" aria-controls="artist-overview" role="tab" data-toggle="tab") Overview
+            li(role="presentation")
+              a(href="#related-artists" aria-controls="related-artists" role="tab" data-toggle="tab") Related Artists
+            //
+              <li role="presentation">
+              <a href="#artist-about" aria-controls="artist-about" role="tab" data-toggle="tab">About</a>
+              </li>
+          .artist__navigation__friends
+            a(href="#")
+              img(src="http://zblogged.com/wp-content/uploads/2015/11/17.jpg" alt="")
+            a(href="#")
+              img(src="http://zblogged.com/wp-content/uploads/2015/11/5.png" alt="")
+            a(href="#")
+              img(src="http://cdn.devilsworkshop.org/files/2013/01/enlarged-facebook-profile-picture.jpg" alt="")
+      .artist__content
+        .tab-content
+          // Overview
+          #artist-overview.tab-pane.active(role="tabpanel")
+            .overview
+              .overview__artist
+                // Latest Release
+                .section-title Latest Release
+                .latest-release
+                  .latest-release__art
+                    img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg" alt="When It's Dark Out")
+                  .latest-release__song
+                    .latest-release__song__title Drifting (Track Commentary)
+                    .latest-release__song__date
+                      span.day 4
+                      span.month December
+                      span.year 2015
+                // /
+                // Popular
+                .section-title Popular
+                .tracks
+                  .track
+                    .track__art
+                      img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg" alt="When It's Dark Out")
+                    .track__number 1
+                    .track__added
+                      i.ion-checkmark-round.added
+                    .track__title Me, Myself & I
+                    .track__explicit
+                      span.label Explicit
+                    .track__plays 147,544,165
+                  .track
+                    .track__art
+                      img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/tth.jpg" alt="These Things Happen")
+                    .track__number 2
+                    .track__added
+                      i.ion-plus.not-added
+                    .track__title I Mean It
+                    .track__explicit
+                      span.label Explicit
+                    .track__plays 74,568,782
+                  .track
+                    .track__art
+                      img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg" alt="When It's Dark Out")
+                    .track__number 3
+                    .track__added
+                      i.ion-checkmark-round.added
+                    .track__title Calm Down
+                    .track__explicit
+                      span.label Explicit
+                    .track__plays 13,737,506
+                  .track
+                    .track__art
+                      img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg" alt="When It's Dark Out")
+                    .track__number 4
+                    .track__added
+                      i.ion-plus.not-added
+                    .track__title Some Kind Of Drug
+                    .track__explicit
+                      span.label Explicit
+                    .track__plays 12,234,881
+                  .track
+                    .track__art
+                      img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/tth.jpg" alt="These Things Happen")
+                    .track__number 5
+                    .track__added
+                      i.ion-checkmark-round.added
+                    .track__title Let's Get Lost
+                    .track__explicit
+                      span.label Explicit
+                    .track__plays 40,882,954
+                button.show-more.button-light Show 5 More
+                // /
+              .overview__related
+                .section-title Related Artists
+                .related-artists
+                  a.related-artist(href="#")
+                    span.related-artist__img
+                      img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/hoodie.jpg" alt="Hoodie Allen")
+                    span.related-artist__name Hoodie Allen
+                  a.related-artist(href="#")
+                    span.related-artist__img
+                      img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/mikestud.jpg" alt="Mike Stud")
+                    span.related-artist__name Mike Stud
+                  a.related-artist(href="#")
+                    span.related-artist__img
+                      img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/drake.jpeg" alt="Drake")
+                    span.related-artist__name Drake
+                  a.related-artist(href="#")
+                    span.related-artist__img
+                      img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/jcole.jpg" alt="J. Cole")
+                    span.related-artist__name J. Cole
+                  a.related-artist(href="#")
+                    span.related-artist__img
+                      img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/bigsean.jpg" alt="Big Sean")
+                    span.related-artist__name Big Sean
+                  a.related-artist(href="#")
+                    span.related-artist__img
+                      img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/wiz.jpeg" alt="Wiz Khalifa")
+                    span.related-artist__name Wiz Khalifa
+                  a.related-artist(href="#")
+                    span.related-artist__img
+                      img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/yonas.jpg" alt="Yonas")
+                    span.related-artist__name Yonas
+              .overview__albums
+                .overview__albums__head
+                  span.section-title Albums
+                  span.view-type
+                    i.fa.fa-list.list.active
+                    i.fa.fa-th-large.card
+                .album
+                  .album__info
+                    .album__info__art
+                      img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/whenDarkOut.jpg" alt="When It's Dark Out")
+                    .album__info__meta
+                      .album__year 2015
+                      .album__name When It's Dark Out
+                      .album__actions
+                        button.button-light.save Save
+                        button.button-light.more
+                          i.ion-ios-more
+                  .album__tracks
+                    .tracks
+                      .tracks__heading
+                        .tracks__heading__number #
+                        .tracks__heading__title Song
+                        .tracks__heading__length
+                          i.ion-ios-stopwatch-outline
+                        .tracks__heading__popularity
+                          i.ion-thumbsup
+                      .track
+                        .track__number 1
+                        .track__added
+                          i.ion-checkmark-round.added
+                        .track__title Intro
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 1:11
+                        .track__popularity
+                          i.ion-arrow-graph-up-right
+                      .track
+                        .track__number 2
+                        .track__added
+                          i.ion-checkmark-round.added
+                        .track__title Random
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 3:00
+                        .track__popularity
+                          i.ion-arrow-graph-up-right
+                      .track
+                        .track__number 3
+                        .track__added
+                          i.ion-checkmark-round.added
+                        .track__title.featured
+                          span.title Me, Myself & I
+                          span.feature Bebe Rexha
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 4:11
+                        .track__popularity
+                          i.ion-arrow-graph-up-right
+                      .track
+                        .track__number 4
+                        .track__added
+                          i.ion-checkmark-round.added
+                        .track__title.featured
+                          span.title One Of Them
+                          span.feature Big Sean
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 3:20
+                        .track__popularity
+                          i.ion-arrow-graph-down-right
+                      .track
+                        .track__number 5
+                        .track__added
+                          i.ion-checkmark-round.added
+                        .track__title.featured
+                          span.title Drifting
+                          span.feature Chris Brown
+                          span.feature Tory Lanez
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 4:33
+                        .track__popularity
+                          i.ion-arrow-graph-up-right
+                      .track
+                        .track__number 6
+                        .track__added
+                          i.ion-checkmark-round.added
+                        .track__title.featured
+                          span.title Of All Things
+                          span.feature Too $hort
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 3:34
+                        .track__popularity
+                          i.ion-arrow-graph-up-right
+                      .track
+                        .track__number 7
+                        .track__added
+                          i.ion-checkmark-round.added
+                        .track__title.featured
+                          span.title Order More
+                          span.feature Starrah
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 3:29
+                        .track__popularity
+                          i.ion-arrow-graph-up-right
+                      .track
+                        .track__number 8
+                        .track__added
+                          i.ion-checkmark-round.added
+                        .track__title
+                          span Calm Down
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 2:07
+                        .track__popularity
+                          i.ion-arrow-graph-up-right
+                      .track
+                        .track__number 9
+                        .track__added
+                          i.ion-plus.not-added
+                        .track__title.featured
+                          span.title Don't Let Me Go
+                          span.feature Grace
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 3:11
+                        .track__popularity
+                          i.ion-arrow-graph-down-right
+                      .track
+                        .track__number 10
+                        .track__added
+                          i.ion-checkmark-round.added
+                        .track__title
+                          span You Got Me
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 3:28
+                        .track__popularity
+                          i.ion-arrow-graph-up-right
+                      .track
+                        .track__number 11
+                        .track__added
+                          i.ion-checkmark-round.added
+                        .track__title.featured
+                          span.title What If
+                          span.feature Gizzle
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 4:13
+                        .track__popularity
+                          i.ion-arrow-graph-up-right
+                      .track
+                        .track__number 12
+                        .track__added
+                          i.ion-checkmark-round.added
+                        .track__title
+                          span Sad Boy
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 3:23
+                        .track__popularity
+                          i.ion-arrow-graph-up-right
+                      .track
+                        .track__number 13
+                        .track__added
+                          i.ion-checkmark-round.added
+                        .track__title.featured
+                          span.title Some Kind Of Drug
+                          span.feature Marc E. Bassy
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 3:42
+                        .track__popularity
+                          i.ion-arrow-graph-up-right
+                      .track
+                        .track__number 14
+                        .track__added
+                          i.ion-checkmark-round.added
+                        .track__title.featured
+                          span.title Think About You
+                          span.feature Quin
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 2:59
+                        .track__popularity
+                          i.ion-arrow-graph-up-right
+                      .track
+                        .track__number 15
+                        .track__added
+                          i.ion-checkmark-round.added
+                        .track__title.featured
+                          span.title Everything Will Be OK
+                          span.feature Kehlani
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 5:11
+                        .track__popularity
+                          i.ion-arrow-graph-up-right
+                      .track
+                        .track__number 16
+                        .track__added
+                          i.ion-checkmark-round.added
+                        .track__title.featured
+                          span.title For This
+                          span.feature Iamnobodi
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 4:11
+                        .track__popularity
+                          i.ion-arrow-graph-up-right
+                      .track
+                        .track__number 17
+                        .track__added
+                          i.ion-checkmark-round.added
+                        .track__title.featured
+                          span.title Nothing to Me
+                          span.feature Keyshia Cole
+                          span.feature E-40
+                        .track__explicit
+                          span.label Explicit
+                        .track__length 5:30
+                        .track__popularity
+                          i.ion-arrow-graph-up-right
+          // /
+          // Related Artists
+          #related-artists.tab-pane(role="tabpanel")
+            .media-cards
+              .media-card
+                .media-card__image(style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/hoodie.jpg);")
+                  i.ion-ios-play
+                a.media-card__footer Hoodie Allen
+              .media-card
+                .media-card__image(style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/mikestud_large.jpg);")
+                  i.ion-ios-play
+                a.media-card__footer Mike Stud
+              .media-card
+                .media-card__image(style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/drake_large.jpg);")
+                  i.ion-ios-play
+                a.media-card__footer Drake
+              .media-card
+                .media-card__image(style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/jcole_large.jpg);")
+                  i.ion-ios-play
+                a.media-card__footer J. Cole
+              .media-card
+                .media-card__image(style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/bigSean_large.jpg);")
+                  i.ion-ios-play
+                a.media-card__footer Big Sean
+              .media-card
+                .media-card__image(style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/wiz.jpeg);")
+                  i.ion-ios-play
+                a.media-card__footer Wiz Khalifa
+              .media-card
+                .media-card__image(style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/yonas.jpg);")
+                  i.ion-ios-play
+                a.media-card__footer Yonas
+              .media-card
+                .media-card__image(style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/7022/childish.jpg);")
+                  i.ion-ios-play
+                a.media-card__footer Childish Gambino
+          // /
+          // About // Coming Soon
+          // <div role="tabpanel" class="tab-pane" id="artist-about">About</div>
+          // /
+  .content__right
+    .social
+      .friends
+        a.friend(href="#")
+          i.ion-android-person
+          |           Sam Smith
+        a.friend(href="#")
+          i.ion-android-person
+          |           Tarah Forsyth
+        a.friend(href="#")
+          i.ion-android-person
+          |           Ricahrd Tomkins
+        a.friend(href="#")
+          i.ion-android-person
+          |           Tony Russo
+        a.friend(href="#")
+          i.ion-android-person
+          |           Alyssa Marist
+        a.friend(href="#")
+          i.ion-android-person
+          |           Ron Samson
+      button.button-light Find Friends
+section.current-track
+  .current-track__actions
+    a.ion-ios-skipbackward
+    a.ion-ios-play.play
+    a.ion-ios-skipforward
+  .current-track__progress
+    .current-track__progress__start 0:01
+    .current-track__progress__bar
+      #song-progress
+    .current-track__progress__finish 3:07
+  .current-track__options
+    a.lyrics(href="#") Lyrics
+    span.controls
+      a.control(href="#")
+        i.ion-navicon
+      a.control(href="#")
+        i.ion-shuffle
+      a.control(href="#")
+        i.fa.fa-refresh
+      a.control.devices(href="#")
+        i.ion-iphone
+        span Devices Available
+      a.control.volume(href="#")
+        i.ion-volume-high
+        #song-volume
