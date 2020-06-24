@@ -5,10 +5,13 @@ path = require('path')
 cookieParser = require('cookie-parser')
 logger = require('morgan')
 sassMiddleware = require('node-sass-middleware')
-coffee = require('coffeescript')
 url = require('url')
 fs = require('fs')
 webpack = require('webpack')
+
+require('coffeescript/register')
+
+webpackConfig = require('./webpack.config')
 
 
 indexRouter = require('./routes/index')
@@ -18,32 +21,14 @@ app = express()
 app.set 'views', path.join(__dirname, 'views')
 app.set 'view engine', 'pug'
 
-# webpack setup
-webp = webpack {
-    entry: 
-        app: './app/entry.coffee'
-    output:
-        path: path.join(__dirname, 'public', 'js')
-        filename: '[name].bundle.js'
-    module: 
-        rules: [
-            {
-                test: /\.coffee$/,
-                loader: 'coffee-loader',
-            }
-        ]
-    }
 
-webpWatch = webp.watch {
-        aggregateTimeout: 100,
-        poll: 100,
-        ignored: /node_modules/,
-        infoVverbosity: 'verbose',
-    },(err, stats) =>
-    if stats.hasErrors()
-        console.error "Webpack compilation error:", stats.compilation.errors
-    else
-        console.log "Webpack: built", stats.hash
+# webpack setup
+webpack webpackConfig
+    .watch ignored: /node_modules/, (err, stats) =>
+        if stats.hasErrors()
+            console.error "Webpack compilation error:", stats.compilation.errors
+        else
+            console.log "Webpack: built", stats.hash
 
 app.use logger('dev')
 app.use express.json()
@@ -54,8 +39,8 @@ app.use sassMiddleware(
   src: path.join(__dirname, 'app', 'style')
   dest: path.join(__dirname, 'public', 'css')
   indentedSyntax: true
-  sourceMap: true
-  debug: true,
+  sourceMap: true,
+  debug: false,
   prefix: '/css')
 
 app.use express.static(path.join(__dirname, 'public'))

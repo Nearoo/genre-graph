@@ -1,10 +1,13 @@
 import ForceGraph3D from '3d-force-graph'
 
 class Tree
-    constructor: (@graphDomElement) ->
-        @graph = ForceGraph3D()
+    constructor: (@graphDomElement, @graphCanvasElement) ->
+        @graph = ForceGraph3D {
+            rendererConfig:
+                canvas: @graphCanvasElement
+        }
 
-        @graph @graphDomElement
+        @graph(@graphDomElement)
             .dagMode 'radialout'
             .nodeAutoColorBy 'isRoot'
             .nodeLabel 'id'

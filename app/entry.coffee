@@ -1,13 +1,20 @@
 
-import ForceGraph3D from '3d-force-graph'
+
 import { Tree } from './tree.coffee'
+import * as $ from 'jquery'
 
-tree = new Tree document.getElementById 'graph'
+# Canvas for graph
+canv = document.getElementById 'graph'
+div = document.getElementById 'graph-container'
+t = new Tree div, canv
 
-tree.addChild 0
+
+t.addChild 0
+    .addChild 0
     .addChild 0
     .addChild 0
     .addChild 1
     .addChild 2
     .addChild 3
+    .addChild 4
     .pushUpdates()
