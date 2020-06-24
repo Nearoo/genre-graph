@@ -2,7 +2,7 @@ path = require('path')
 
 module.exports =
     entry: 
-        app: './app/entry.coffee'
+        app: './src/entry.coffee'
     output:
         path: path.join(__dirname, 'public', 'js')
         filename: '[name].bundle.js'

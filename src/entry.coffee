@@ -1,6 +1,6 @@
 
 
-import { Tree } from './tree.coffee'
+import { Tree } from './coffee/tree.coffee'
 import * as $ from 'jquery'
 
 # Canvas for graph

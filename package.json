@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon --watch app.coffee --watch webpack.config.coffee --watch bin/* ./bin/main.coffee"
+    "start": "nodemon --watch app.coffee --watch webpack.config.coffee ./app.coffee"
   },
   "dependencies": {
     "3d-force-graph": "^1.65.1",
@@ -25,6 +25,9 @@
     "webpack": "^4.43.0"
   },
   "nodemonConfig": {
-    "coffee": "coffee"
+    "coffee": "coffee",
+    "env": {
+      "DEBUG": "genre-graph:server"
+    }
   }
 }
