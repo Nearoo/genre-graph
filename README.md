@@ -1,3 +1,4 @@
+*  [Roadmap, Screenshots, Goal on Notion](https://www.notion.so/Music-Graph-5119dce2c5464bbfb501736d444004f5)
 # Setup
 
 Install node pkgs:
@@ -30,7 +31,3 @@ Place | Meaning
 `view/` | Contains pug files, `view/index/meta/index.pug` is loaded as index; edit `view/index/content.pug` to add content to `<body></body>`
 `routes/` | Routes, like the one point to `index.pug`
 `public/` | Contains files accessible from client; e.g. request `images/foo.png` returns `public/images/foo.png`. `.js` and `.css` are generated from source in `app` dir, other files can be placed for easy access
-
----
-
-[Roadmap, Screenshots, Goal on Notion](https://www.notion.so/Music-Graph-5119dce2c5464bbfb501736d444004f5)
