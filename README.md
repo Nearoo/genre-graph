@@ -13,7 +13,7 @@ Server will reload on change in
 * `app.coffee`
 * `webpack.config.coffee`
 
-Wepack renders (slowly!) on change in 
+Wepack renders on change in 
 * `app/entry.coffee` and everything it imports
 
 SASS is rendered on-demand.
