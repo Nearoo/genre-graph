@@ -14,7 +14,7 @@ Server will reload on change in
 * `webpack.config.coffee`
 
 Wepack renders on change in 
-* `src/entry.coffee` and everything it imports
+* `src/entry.coffee` or anything it imports
 
 SASS is rendered on-demand.
 
@@ -22,11 +22,11 @@ SASS is rendered on-demand.
 
 Place | Meaning
 --- | ---
-`src/` | Contains all frontend source: js as coffee, html as pug, css as scss
-`public/` | Contains files accessible from client; e.g. request `images/foo.png` returns `public/images/foo.png`. `js/` and `css/` dir are filled outomatically with rendered content from `src/`
-`src/entry.coffee` | Frontend entry point. Is bundled by webpack on change along with anything it imports, saved into `public/js/app.bundle.js`
+`src/` | Contains all frontend source: js as coffee, html as pug, css as sass
+`public/` | Contains files exposed to public via webserver. E.g. request `images/foo.png` returns `public/images/foo.png`. `js/` and `css/` dir are filled automatically with rendered content from `src/`
+`src/entry.coffee` | Frontend entry point. Bundled by webpack on change along with anything it imports, then stored at `public/js/app.bundle.js`
 `src/pug/index/index.pug` | Loaded as index
-`src/style/style.sass` | main css file, included in every page 
+`src/style/style.sass` | main css file, included on every page 
 `app.coffee` | Backend entry point, sets up webpack, coffee, sass etc.
 
 
