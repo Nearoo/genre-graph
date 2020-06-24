@@ -23,7 +23,7 @@ sassConfig =
   dest: path.join(__dirname, 'public', 'css')
   indentedSyntax: true
   sourceMap: true
-  debug: true
+  debug: false
   prefix: '/'
 
 app = express()
@@ -60,7 +60,6 @@ app.use '/', indexRouter
 
 # Handle 404
 app.use (req, res, next) ->
-  debug "404: #{req.baseUrl}"
   next createError(404)
   return
 
