@@ -1,13 +1,14 @@
-#main-container
-    #header-container
+#main
+    .top
         h3 Foo Bar
-    #content-container
-        #graph-container
+    .middle
+        .left#graph-container
             canvas#graph
-        #selector-container
-    #player-container
-        #title-display-container
-            include track_title
-        #playback-container
+        .right
+    .bottom
+        .left#track-info
+            include trackinfo
+        .center#playback
             include playback
-        #player-control-container
+        .right#loudness-controls
+            include loudness

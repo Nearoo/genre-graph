@@ -1,0 +1,196 @@
+@import 'vars'
+
+@mixin border-debug($color: white)
+  // border: 1px solid $debug-color
+
+
+@mixin background-debug($color: red)
+  background-color: $color !important
+
+@mixin spread-max
+  width: 100%
+  max-width: 100%
+  height: 100%
+  max-height: 100%
+
+@mixin flex
+  display: flex
+
+@mixin flex-row
+  flex-direction: row
+
+@mixin flex-column
+  flex-direction: column
+
+@mixin flex-around
+  justify-content: space-around
+
+@mixin flex-center
+  justify-content: center
+
+@mixin flex-left
+  justify-content: flex-start
+  
+@mixin flex-top
+  justify-content: flex-start
+
+@font-face
+  font-family: 'Roboto'
+  src: url("./fonts/Roboto/Roboto-Regular.ttf")
+
+// New:
+$top-bar-height: 50px
+$bottom-bar-height: 100px
+$right-bar-width: 300px
+$album-size-small: 80px
+
+$bottom-bar-left-width: 300px
+$bottom-bar-right-width: 300px
+
+$playback-bar-height: 5px
+$playback-buttons-margin: 20px
+
+$progress-bar-margin-rl: 20px
+
+div
+  @include border-debug
+
+html, body
+  @include spread-max
+  color: $light-grey
+  font-family: 'Roboto', sans-serif
+
+a
+  color: $light-grey
+  &:hover
+    color: $white
+  
+  &:active
+    color: $dark-grey
+
+body 
+  background: $black
+  font-family: 'Roboto', sans-serif
+
+#main
+  @include flex
+  @include flex-column
+  @include spread-max
+  @include flex-around
+  align-items: stretch
+  
+
+  .top
+    height: $top-bar-height
+
+  .middle
+    flex-grow: 1
+    @include flex
+    @include flex-row
+    .left
+      flex-grow: 1
+    .right
+      width: $right-bar-width
+  
+  .bottom
+    @include flex
+    @include flex-row
+    @include flex-center
+    height: $bottom-bar-height
+    background-color: $light-black
+
+    .left
+      width: $bottom-bar-left-width
+
+    .center
+      flex-grow: 1
+
+    .right
+      width: $bottom-bar-right-width
+
+// Left part of bottom row - contains album cover & title
+#track-info
+  @include flex
+  @include flex-left
+
+  .cover-image-container
+    @include flex
+    @include flex-column
+    @include flex-center
+    
+    img
+      width: $album-size-small
+      height: $album-size-small
+      margin-left: 5px
+
+
+  .text-container
+    @include flex
+    @include flex-column
+    @include flex-center
+
+#playback
+  @include flex
+  @include flex-column
+  @include flex-center
+
+  .playback-controls
+    flex-grow: 1
+    @include flex
+    @include flex-column
+    @include flex-center
+  
+    .buttons
+        @include flex
+        @include flex-row
+        @include flex-center
+        align-items: center
+
+  .playback-progress
+    @include flex
+    @include flex-row
+    @include flex-center
+    flex-grow: 1
+
+    .bar-container
+      flex-grow: 1
+      text-align: center
+      @include flex
+      @include flex-center
+      @include flex-column
+      
+
+    .time-right, .time-left
+      width: 100px
+      text-align: center
+      @include flex
+      @include flex-center
+      @include flex-column
+      p
+        margin-bottom: 0 !important
+      
+
+#progress-bar
+  width: 100%
+  background-color: $dark-grey
+  boder-radius: $playback-bar-height / 2
+  div // Progress bar holder
+    height: $playback-bar-height
+    width: 34% // temporary
+    background-color: $light-grey
+    border-radius: $playback-bar-height / 2
+
+#playback-buttons
+  a
+    margin-left: $playback-buttons-margin
+    margin-right: $playback-buttons-margin
+    font-size: 15pt
+
+#graph-container
+  flex-grow: 1
+  display: flex
+
+#graph
+  display: block
+  width: 100% !important
+  height: 100% !important

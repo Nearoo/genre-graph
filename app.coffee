@@ -22,9 +22,11 @@ sassConfig =
   src: path.join(srcPath, 'style')
   dest: path.join(__dirname, 'public', 'css')
   indentedSyntax: true
-  sourceMap: true
+  sourceMap: false
   debug: false
-  prefix: '/'
+  maxAge: 0
+  outputStyle: 'compressed'
+  prefix: '/css'
 
 app = express()
 app.use morgan('dev', {
