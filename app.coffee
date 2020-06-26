@@ -5,6 +5,7 @@ path = require('path')
 cookieParser = require('cookie-parser')
 morgan = require('morgan')
 sassMiddleware = require('node-sass-middleware')
+stylus = require('stylus')
 url = require('url')
 fs = require('fs')
 webpack = require('webpack')
@@ -15,26 +16,28 @@ debug = require('debug')('genre-graph:server')
 require('coffeescript/register')
 
 # Configs...
-srcPath = path.join(__dirname, 'src')
+inPath = path.join(__dirname, 'src')
+outPath = path.join(__dirname, 'public')
+
 indexRouter = require('./routes/index')
 webpackConfig = require('./webpack.config')
-sassConfig =
-  src: path.join(srcPath, 'style')
-  dest: path.join(__dirname, 'public', 'css')
-  indentedSyntax: true
-  sourceMap: false
-  debug: false
-  maxAge: 0
-  outputStyle: 'compressed'
-  prefix: '/css'
+
+stylusConfig =
+  src: path.join(inPath, 'style')
+  dest: path.join(outPath, 'css')
+  linenos: true
+  sourcemap: true
+  debug: true
 
 app = express()
 app.use morgan('dev', {
   stream: process.stdout
 })
 
+app.locals.pretty = true
+
 # Setup pug
-app.set 'views', path.join(srcPath, 'pug')
+app.set 'views', path.join(inPath, 'pug')
 app.set 'view engine', 'pug'
 
 # Setup webpack for coffee
@@ -45,17 +48,12 @@ webpack require('./webpack.config')
         else
             console.log "Webpack: built", stats.hash
 
-# Add more middlewares (?)
-app.use express.json()
-app.use express.urlencoded(extended: false)
-app.use cookieParser()
-
-# Add sass middleware
-app.use sassMiddleware sassConfig
-# Setup public/ as static directory
-app.use express.static(path.join(__dirname, 'public'))
 # Setup /css as another static handle as css/ is prepended to resources requested in css files
 app.use '/css', express.static path.join(__dirname, 'public')
+app.use stylus.middleware stylusConfig
+
+# Setup ./public as static directory
+app.use express.static(path.join(__dirname, 'public'))
 
 # Setup route to index
 app.use '/', indexRouter
@@ -73,6 +71,7 @@ app.use (err, req, res, next) ->
   # render the error page
   res.status err.status or 500
   res.render 'error'
+  console.error err.stack
   return
 
 

@@ -1,1 +1,231 @@
-@font-face{font-family:'Roboto';src:url("./fonts/Roboto/Roboto-Regular.ttf")}html,body{width:100%;max-width:100%;height:100%;max-height:100%;color:#aaa;font-family:'Roboto', sans-serif}a{color:#aaa}a:hover{color:#fff}a:active{color:#404040}body{background:#121212;font-family:'Roboto', sans-serif}#main{display:flex;flex-direction:column;width:100%;max-width:100%;height:100%;max-height:100%;justify-content:space-around;align-items:stretch}#main .top{height:50px}#main .middle{flex-grow:1;display:flex;flex-direction:row}#main .middle .left{flex-grow:1}#main .middle .right{width:300px}#main .bottom{display:flex;flex-direction:row;justify-content:center;height:100px;background-color:#282828}#main .bottom .left{width:300px}#main .bottom .center{flex-grow:1}#main .bottom .right{width:300px}#track-info{display:flex;justify-content:flex-start}#track-info .cover-image-container{display:flex;flex-direction:column;justify-content:center}#track-info .cover-image-container img{width:80px;height:80px;margin-left:5px}#track-info .text-container{display:flex;flex-direction:column;justify-content:center}#playback{display:flex;flex-direction:column;justify-content:center}#playback .playback-controls{flex-grow:1;display:flex;flex-direction:column;justify-content:center}#playback .playback-controls .buttons{display:flex;flex-direction:row;justify-content:center;align-items:center}#playback .playback-progress{display:flex;flex-direction:row;justify-content:center;flex-grow:1}#playback .playback-progress .bar-container{flex-grow:1;text-align:center;display:flex;justify-content:center;flex-direction:column}#playback .playback-progress .time-right,#playback .playback-progress .time-left{width:100px;text-align:center;display:flex;justify-content:center;flex-direction:column}#playback .playback-progress .time-right p,#playback .playback-progress .time-left p{margin-bottom:0 !important}#progress-bar{width:100%;background-color:#404040;boder-radius:2.5px}#progress-bar div{height:5px;width:34%;background-color:#aaa;border-radius:2.5px}#playback-buttons a{margin-left:20px;margin-right:20px;font-size:15pt}#graph-container{flex-grow:1;display:flex}#graph{display:block;width:100% !important;height:100% !important}
+
+/* line 199 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+
+/* line 1 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/node_modules/stylus/lib/functions/index.styl */
+
+/* line 297 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/node_modules/stylus/lib/functions/index.styl */
+
+/* line 3 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/vars.styl */
+
+/* line 41 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+@font-face {
+  font-family: 'Roboto';
+  src: url("./fonts/Roboto/Roboto-Regular.ttf");
+}
+
+/* line 59 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+div {
+  border: 1px solid #786e28;
+}
+
+/* line 62 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  color: #aaa;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 67 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+a {
+  color: #aaa;
+}
+
+/* line 69 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+a:hover {
+  color: #fff;
+}
+
+/* line 72 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+a:active {
+  color: #404040;
+}
+
+/* line 75 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+body {
+  background: #121212;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 79 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+/* line 86 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#main .top {
+  height: 50px;
+}
+
+/* line 89 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#main .middle {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 93 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#main .middle .left {
+  flex-grow: 1;
+}
+
+/* line 95 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#main .middle .right {
+  width: 300px;
+}
+
+/* line 98 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#main .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100px;
+  background-color: #282828;
+}
+
+/* line 105 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#main .bottom .left {
+  width: 300px;
+}
+
+/* line 108 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#main .bottom .center {
+  flex-grow: 1;
+}
+
+/* line 111 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#main .bottom .right {
+  width: 300px;
+}
+
+/* line 115 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#track-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* line 119 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#track-info .cover-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 124 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#track-info .cover-image-container img {
+  width: 80px;
+  height: 80px;
+  margin-left: 5px;
+}
+
+/* line 130 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#track-info .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 135 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#playback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 140 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#playback .playback-controls {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 146 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#playback .playback-controls .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 152 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#playback .playback-progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+/* line 158 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#playback .playback-progress .bar-container {
+  flex-grow: 1;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 166 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#playback .playback-progress .time-right,
+#playback .playback-progress .time-left {
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 172 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#playback .playback-progress .time-right p,
+#playback .playback-progress .time-left p {
+  margin-bottom: 0 !important;
+}
+
+/* line 176 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#progress-bar {
+  width: 100%;
+  background-color: #404040;
+  boder-radius: 5px/2;
+}
+
+/* line 180 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#progress-bar div {
+  height: 5px;
+  width: 34%;
+  background-color: #aaa;
+  border-radius: 5px/2;
+}
+
+/* line 186 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+
+/* line 187 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#playback-buttons a {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 15pt;
+}
+
+/* line 192 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#graph-container {
+  flex-grow: 1;
+  display: flex;
+}
+
+/* line 196 : /mnt/c/Users/silas/Documents/Javascript/genre-graph/src/style/style.styl */
+#graph {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZS9zdHlsZS5zdHlsIiwic3JjL3N0eWxlL3ZhcnMuc3R5bCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF3Q0E7RUFDRSxhQUFhLFNBQWI7RUFDQSxLQUE0Qyx5Q0FBNUM7O0FBZ0JGO0VDMURRLFFBQU8sa0JBQVA7O0FENkRSO0FBQU07RUM3REUsT0FBTSxLQUFOO0VBQVcsV0FBVSxLQUFWO0VBQWUsUUFBTyxLQUFQO0VBQVksWUFBVyxLQUFYO0VEK0Q1QyxPQUFPLEtBQVA7RUFDQSxhQUFxQixxQkFBckI7O0FBRUY7RUFDRSxPQUFPLEtBQVA7O0FBQ0E7RUFDRSxPQUFPLEtBQVA7O0FBRUY7RUFDRSxPQUFPLFFBQVA7O0FBRUo7RUFDRSxZQUFZLFFBQVo7RUFDQSxhQUFxQixxQkFBckI7O0FBRUY7RUM5RVEsU0FBUSxLQUFSO0VBQWEsZ0JBQWUsT0FBZjtFQUFiLE9BQU0sS0FBTjtFQUFXLFdBQVUsS0FBVjtFQUFlLFFBQU8sS0FBUDtFQUFZLFlBQVcsS0FBWDtFQUF0QyxpQkFBZ0IsYUFBaEI7RURrRk4sYUFBYSxRQUFiOztBQUdBO0VBQ0UsUUFBUSxLQUFSOztBQUVGO0VBQ0UsV0FBVyxFQUFYO0VDekZJLFNBQVEsS0FBUjtFQUFhLGdCQUFlLElBQWY7O0FENEZqQjtFQUNFLFdBQVcsRUFBWDs7QUFDRjtFQUNFLE9BQU8sTUFBUDs7QUFFSjtFQ2pHTSxTQUFRLEtBQVI7RUFBYSxnQkFBZSxJQUFmO0VBQWIsaUJBQWdCLE9BQWhCO0VEcUdKLFFBQVEsTUFBUjtFQUNBLGtCQUFrQixRQUFsQjs7QUFFQTtFQUNFLE9BQU8sTUFBUDs7QUFFRjtFQUNFLFdBQVcsRUFBWDs7QUFFRjtFQUNFLE9BQU8sTUFBUDs7QUFHTjtFQ2xIUSxTQUFRLEtBQVI7RUFBYSxnQkFBZSxJQUFmO0VBQWIsaUJBQWdCLFdBQWhCOztBRHNITjtFQ3RITSxTQUFRLEtBQVI7RUFBYSxnQkFBZSxPQUFmO0VBQWIsaUJBQWdCLE9BQWhCOztBRDJISjtFQUNFLE9BQU8sS0FBUDtFQUNBLFFBQVEsS0FBUjtFQUNBLGFBQWEsSUFBYjs7QUFHSjtFQ2pJTSxTQUFRLEtBQVI7RUFBYSxnQkFBZSxPQUFmO0VBQWIsaUJBQWdCLE9BQWhCOztBRHNJUjtFQ3RJUSxTQUFRLEtBQVI7RUFBYSxnQkFBZSxPQUFmO0VBQWIsaUJBQWdCLE9BQWhCOztBRDJJTjtFQUNFLFdBQVcsRUFBWDtFQzVJSSxTQUFRLEtBQVI7RUFBYSxnQkFBZSxPQUFmO0VBQWIsaUJBQWdCLE9BQWhCOztBRGlKSjtFQ2pKSSxTQUFRLEtBQVI7RUFBYSxnQkFBZSxJQUFmO0VBQWIsaUJBQWdCLE9BQWhCO0VEcUpBLGFBQWEsT0FBYjs7QUFFTjtFQ3ZKTSxTQUFRLEtBQVI7RUFBYSxnQkFBZSxJQUFmO0VBQWIsaUJBQWdCLE9BQWhCO0VEMkpKLFdBQVcsRUFBWDs7QUFFQTtFQUNFLFdBQVcsRUFBWDtFQUNBLFlBQVksT0FBWjtFQy9KRSxpQkFBZ0IsT0FBaEI7RUFBQSxTQUFRLEtBQVI7RUFBYSxnQkFBZSxPQUFmOztBRHFLakI7QUFBYTtFQUNYLE9BQU8sTUFBUDtFQUNBLFlBQVksT0FBWjtFQ3ZLRSxpQkFBZ0IsT0FBaEI7RUFBQSxTQUFRLEtBQVI7RUFBYSxnQkFBZSxPQUFmOztBRDJLZjs7RUFDRSxlQUFlLGFBQWY7O0FBR1I7RUFDRSxPQUFPLEtBQVA7RUFDQSxrQkFBa0IsUUFBbEI7RUFDQSxjQUFjLE1BQWQ7O0FBQ0E7RUFDRSxRQUFRLElBQVI7RUFDQSxPQUFPLElBQVA7RUFDQSxrQkFBa0IsS0FBbEI7RUFDQSxlQUFlLE1BQWY7O0FBR0Y7RUFDRSxhQUFhLEtBQWI7RUFDQSxjQUFjLEtBQWQ7RUFDQSxXQUFXLEtBQVg7O0FBRUo7RUFDRSxXQUFXLEVBQVg7RUFDQSxTQUFTLEtBQVQ7O0FBRUY7RUFDRSxTQUFTLE1BQVQ7RUFDQSxPQUFPLGdCQUFQO0VBQ0EsUUFBUSxnQkFBUiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAcmVxdWlyZSAndmFycydcblxuYm9yZGVyLWRlYnVnID0ge1xuICBib3JkZXI6IDFweCBzb2xpZCBkZWJ1Zy1jb2xvclxufVxuXG5zcHJlYWQtbWF4ID0ge1xuICB3aWR0aDogMTAwJVxuICBtYXgtd2lkdGg6IDEwMCVcbiAgaGVpZ2h0OiAxMDAlXG4gIG1heC1oZWlnaHQ6IDEwMCVcbn1cblxuXG5mbGV4LXJvdyA9IHtcbiAgICBkaXNwbGF5OiBmbGV4XG4gICAgZmxleC1kaXJlY3Rpb246IHJvd1xufVxuXG5mbGV4LWNvbHVtbiA9IHtcbiAgICBkaXNwbGF5OiBmbGV4XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtblxufVxuXG5mbGV4LWFyb3VuZCA9IHtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmRcbn1cblxuZmxleC1jZW50ZXIgPSB7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyXG59XG5cbmZsZXgtbGVmdCA9IHtcbiAganVzdGlmeS1jb250ZW50OiBmbGV4LXN0YXJ0XG59XG5cbmZsZXgtdG9wID0ge1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtc3RhcnRcbn1cblxuQGZvbnQtZmFjZVxuICBmb250LWZhbWlseTogJ1JvYm90bydcbiAgc3JjOiB1cmwoXCIuL2ZvbnRzL1JvYm90by9Sb2JvdG8tUmVndWxhci50dGZcIilcblxuLy8gTmV3OlxudG9wLWJhci1oZWlnaHQgPSA1MHB4XG5ib3R0b20tYmFyLWhlaWdodCA9IDEwMHB4XG5yaWdodC1iYXItd2lkdGggPSAzMDBweFxuYWxidW0tc2l6ZS1zbWFsbCA9IDgwcHhcblxuYm90dG9tLWJhci1sZWZ0LXdpZHRoID0gMzAwcHhcbmJvdHRvbS1iYXItcmlnaHQtd2lkdGggPSAzMDBweFxuXG5wbGF5YmFjay1iYXItaGVpZ2h0ID0gNXB4XG5wbGF5YmFjay1idXR0b25zLW1hcmdpbiA9IDIwcHhcblxucHJvZ3Jlc3MtYmFyLW1hcmdpbi1ybCA9IDIwcHhcblxuZGl2XG4gIHtib3JkZXItZGVidWd9XG5cbmh0bWwsIGJvZHlcbiAge3NwcmVhZC1tYXh9XG4gIGNvbG9yOiBsaWdodC1ncmV5XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvJywgc2Fucy1zZXJpZlxuXG5hXG4gIGNvbG9yOiBsaWdodC1ncmV5XG4gICY6aG92ZXJcbiAgICBjb2xvcjogd2hpdGVcbiAgXG4gICY6YWN0aXZlXG4gICAgY29sb3I6IGRhcmstZ3JleVxuXG5ib2R5IFxuICBiYWNrZ3JvdW5kOiBibGFja1xuICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWZcblxuI21haW5cbiAge2ZsZXgtY29sdW1ufVxuICB7c3ByZWFkLW1heH1cbiAge2ZsZXgtYXJvdW5kfVxuICBhbGlnbi1pdGVtczogc3RyZXRjaFxuICBcblxuICAudG9wXG4gICAgaGVpZ2h0OiB0b3AtYmFyLWhlaWdodFxuXG4gIC5taWRkbGVcbiAgICBmbGV4LWdyb3c6IDFcbiAgICBcbiAgICB7ZmxleC1yb3d9XG4gICAgLmxlZnRcbiAgICAgIGZsZXgtZ3JvdzogMVxuICAgIC5yaWdodFxuICAgICAgd2lkdGg6IHJpZ2h0LWJhci13aWR0aFxuICBcbiAgLmJvdHRvbVxuICAgIFxuICAgIHtmbGV4LXJvd31cbiAgICB7ZmxleC1jZW50ZXJ9XG4gICAgaGVpZ2h0OiBib3R0b20tYmFyLWhlaWdodFxuICAgIGJhY2tncm91bmQtY29sb3I6IGxpZ2h0LWJsYWNrXG5cbiAgICAubGVmdFxuICAgICAgd2lkdGg6IGJvdHRvbS1iYXItbGVmdC13aWR0aFxuXG4gICAgLmNlbnRlclxuICAgICAgZmxleC1ncm93OiAxXG5cbiAgICAucmlnaHRcbiAgICAgIHdpZHRoOiBib3R0b20tYmFyLXJpZ2h0LXdpZHRoXG5cbi8vIExlZnQgcGFydCBvZiBib3R0b20gcm93IC0gY29udGFpbnMgYWxidW0gY292ZXIgJiB0aXRsZVxuI3RyYWNrLWluZm9cbiAge2ZsZXgtcm93fVxuICB7ZmxleC1sZWZ0fVxuXG4gIC5jb3Zlci1pbWFnZS1jb250YWluZXJcbiAgICBcbiAgICB7ZmxleC1jb2x1bW59XG4gICAge2ZsZXgtY2VudGVyfVxuICAgIFxuICAgIGltZ1xuICAgICAgd2lkdGg6IGFsYnVtLXNpemUtc21hbGxcbiAgICAgIGhlaWdodDogYWxidW0tc2l6ZS1zbWFsbFxuICAgICAgbWFyZ2luLWxlZnQ6IDVweFxuXG5cbiAgLnRleHQtY29udGFpbmVyXG4gICAgXG4gICAge2ZsZXgtY29sdW1ufVxuICAgIHtmbGV4LWNlbnRlcn1cblxuI3BsYXliYWNrXG4gIFxuICB7ZmxleC1jb2x1bW59XG4gIHtmbGV4LWNlbnRlcn1cblxuICAucGxheWJhY2stY29udHJvbHNcbiAgICBmbGV4LWdyb3c6IDFcbiAgICBcbiAgICB7ZmxleC1jb2x1bW59XG4gICAge2ZsZXgtY2VudGVyfVxuICBcbiAgICAuYnV0dG9uc1xuICAgICAgICBcbiAgICAgICAge2ZsZXgtcm93fVxuICAgICAgICB7ZmxleC1jZW50ZXJ9XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXJcblxuICAucGxheWJhY2stcHJvZ3Jlc3NcbiAgICBcbiAgICB7ZmxleC1yb3d9XG4gICAge2ZsZXgtY2VudGVyfVxuICAgIGZsZXgtZ3JvdzogMVxuXG4gICAgLmJhci1jb250YWluZXJcbiAgICAgIGZsZXgtZ3JvdzogMVxuICAgICAgdGV4dC1hbGlnbjogY2VudGVyXG4gICAgICBcbiAgICAgIHtmbGV4LWNlbnRlcn1cbiAgICAgIHtmbGV4LWNvbHVtbn1cbiAgICAgIFxuXG4gICAgLnRpbWUtcmlnaHQsIC50aW1lLWxlZnRcbiAgICAgIHdpZHRoOiAxMDBweFxuICAgICAgdGV4dC1hbGlnbjogY2VudGVyXG4gICAgICBcbiAgICAgIHtmbGV4LWNlbnRlcn1cbiAgICAgIHtmbGV4LWNvbHVtbn1cbiAgICAgIHBcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogMCAhaW1wb3J0YW50XG4gICAgICBcblxuI3Byb2dyZXNzLWJhclxuICB3aWR0aDogMTAwJVxuICBiYWNrZ3JvdW5kLWNvbG9yOiBkYXJrLWdyZXlcbiAgYm9kZXItcmFkaXVzOiBwbGF5YmFjay1iYXItaGVpZ2h0IC8gMlxuICBkaXYgLy8gUHJvZ3Jlc3MgYmFyIGhvbGRlclxuICAgIGhlaWdodDogcGxheWJhY2stYmFyLWhlaWdodFxuICAgIHdpZHRoOiAzNCUgLy8gdGVtcG9yYXJ5XG4gICAgYmFja2dyb3VuZC1jb2xvcjogbGlnaHQtZ3JleVxuICAgIGJvcmRlci1yYWRpdXM6IHBsYXliYWNrLWJhci1oZWlnaHQgLyAyXG5cbiNwbGF5YmFjay1idXR0b25zXG4gIGFcbiAgICBtYXJnaW4tbGVmdDogcGxheWJhY2stYnV0dG9ucy1tYXJnaW5cbiAgICBtYXJnaW4tcmlnaHQ6IHBsYXliYWNrLWJ1dHRvbnMtbWFyZ2luXG4gICAgZm9udC1zaXplOiAxNXB0XG5cbiNncmFwaC1jb250YWluZXJcbiAgZmxleC1ncm93OiAxXG4gIGRpc3BsYXk6IGZsZXhcblxuI2dyYXBoXG4gIGRpc3BsYXk6IGJsb2NrXG4gIHdpZHRoOiAxMDAlICFpbXBvcnRhbnRcbiAgaGVpZ2h0OiAxMDAlICFpbXBvcnRhbnRcbiIsIi8vIENvbG9yc1xuXG5ncmVlbiA9IHJnYigzMCwgMjE1LCA5NilcbmxpZ2h0LWJsYWNrID0gcmdiKDQwLCA0MCwgNDApXG5ibGFjayA9IHJnYigxOCwgMTgsIDE4KVxuYWxtb3N0LWJsYWNrID0gcmdiKDI0LCAyNCwgMjQpXG5kYXJrLWdyZXkgPSByZ2IoNjQsIDY0LCA2NClcbmxpZ2h0LWdyZXkgPSByZ2IoMTcwLCAxNzAsIDE3MClcbnNhbmQgPSByZ2IoMjYsIDcsIDcpXG53aGl0ZSA9IHJnYigyNTUsIDI1NSwgMjU1KVxuYmx1ZSA9ICM0Njg4ZDdcbmRlYnVnLWNvbG9yID0gcmdiKDEyMCwgMTEwLCA0MCkiXX0= */
