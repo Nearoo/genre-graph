@@ -3,12 +3,16 @@
 #import { Tree } from './coffee/tree.coffee'
 import * as $ from 'jquery'
 import * as querystring from 'query-string'
+import { Spotify } from './coffee/spotify.coffee'
 
-{ 
-    access_token
-    refresh_token
-} = querystring.parse location.hash
+spotify = new Spotify location.hash
 
-if access_token? and refresh_token?
-    console.log 'Logged in.'
-
+if spotify.logged_in
+    console.log 'Logged in'
+    ###
+    # Query example
+    spotify.query 'recommendations/available-genre-seeds', {},
+        (data) => console.log data,
+        (err) => console.error err,
+        (done) => console.log "Done"
+    ###
