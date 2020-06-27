@@ -14,3 +14,5 @@ module.exports =
             }
         ]
     devtool: '#eval-source-map'
+    node: 
+        fs: 'empty'

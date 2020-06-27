@@ -2,15 +2,15 @@
 
 .playback-controls
     .buttons#playback-buttons
-        a: i.ion.ion-play-skip-back-circle
-        a: i.ion.ion-play
-        a: i.ion.ion-play-skip-forward-circle
+        a#prev-button: i.ion.ion-play-skip-back-circle
+        a#play-button: i.ion.ion-play
+        a#next-button: i.ion.ion-play-skip-forward-circle
 .playback-progress
     .time-left
         p 4:03
     .bar-container
+        // Outer dive is bg, inner is progress
         #progress-bar
-            // Progress bar holder
             div
     .time-right
         p 12:13
