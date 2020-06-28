@@ -22,7 +22,8 @@
     "raw-loader": "^4.0.1",
     "request": "^2.88.2",
     "stylus": "^0.54.7",
-    "three": "^0.117.1"
+    "three": "^0.118.3",
+    "three-spritetext": "^1.5.1"
   },
   "devDependencies": {
     "coffee-loader": "^1.0.0",

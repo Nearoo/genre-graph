@@ -1,4 +1,6 @@
 import ForceGraph3D from '3d-force-graph'
+import * as three from 'three'
+import SpriteText from 'three-spritetext'
 
 class Tree
     constructor: (@graphDomElement, @graphCanvasElement) ->
@@ -8,11 +10,21 @@ class Tree
         }
 
         @graph(@graphDomElement)
-            .dagMode 'radialout'
-            .nodeAutoColorBy 'isRoot'
-            .nodeLabel 'id'
-            .linkDirectionalArrowLength 3.5
-            .linkDirectionalArrowRelPos 1
+            .nodeLabel 'label'
+            .jsonUrl 'json/genre_graph.json'
+            .nodeThreeObject (node) =>
+                # Collision sphere
+                colGeo = new three.SphereGeometry 10
+                colMat = new three.MeshBasicMaterial { depthWrite: false, transparent: true, opacity: 0}
+
+                colObj = new three.Mesh colGeo, colMat
+
+                # Label
+                sprite = new SpriteText ( node.genre ? '🎷' )
+                sprite.textHeight = 8
+                colObj.add sprite
+
+                return colObj
         
         @graphData =
             nodes: [
@@ -24,6 +36,8 @@ class Tree
             links: []
         @pushUpdates()
         @rootId = 0
+
+        @graph.backgroundColor '#121212' 
     
     addChild: (toId, nodeData={}) =>
             newId = @graphData.nodes.length
@@ -70,6 +84,12 @@ class Tree
     pushUpdates: () =>
         dataCopy = JSON.parse JSON.stringify @graphData
         @graph.graphData dataCopy
+    
+    setRenderSize: (w, h) => 
+        @graph.camera().aspect = w / h
+        @graph.camera().updateProjectionMatrix()
+
+        @graph.renderer().setSize w, h
 
 export { Tree }
     
