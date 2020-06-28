@@ -1,0 +1,3008 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {
+        "node_default": {},
+        "edge_default": {}
+    },
+    "nodes": [
+        {
+            "genre": "Jazz",
+            "influence": "0x1.0a0fdae40c471p+0",
+            "selfReference": "0x1.4d0813e023574p+7",
+            "id": "n0"
+        },
+        {
+            "genre": "MPB",
+            "influence": "0x1.f45d6ed644e77p-1",
+            "selfReference": "0x1.76cb4281ba448p-2",
+            "id": "n1"
+        },
+        {
+            "genre": "Country",
+            "influence": "0x1.f2dcee0bce459p-1",
+            "selfReference": "0x1.8cf2cf61630bbp+2",
+            "id": "n2"
+        },
+        {
+            "genre": "Tribute",
+            "influence": "0x1.4f63e6af89f72p-1",
+            "selfReference": "0x1.ea03e9db38213p-1",
+            "id": "n3"
+        },
+        {
+            "genre": "Swing",
+            "influence": "0x1.03e4a3f928701p-2",
+            "selfReference": "0x1.88635238b14b9p-2",
+            "id": "n4"
+        },
+        {
+            "genre": "R&B/Soul",
+            "influence": "0x1.f925211013a77p-1",
+            "selfReference": "0x1.979efe0001e82p+2",
+            "id": "n5"
+        },
+        {
+            "genre": "Rock",
+            "influence": "0x1.15215ed84f21bp+0",
+            "selfReference": "0x1.87f271388811bp+2",
+            "id": "n6"
+        },
+        {
+            "genre": "Easy Listening",
+            "influence": "0x1.7a26d55d26b83p-1",
+            "selfReference": "0x1.0dfda5e286006p+1",
+            "id": "n7"
+        },
+        {
+            "genre": "Lounge",
+            "influence": "0x1.daf6f91200046p+2",
+            "selfReference": "0x0p+0",
+            "id": "n8"
+        },
+        {
+            "genre": "Pop",
+            "influence": "0x1.ac1440a3009dcp-1",
+            "selfReference": "0x1.84ba6c814e3ddp+2",
+            "id": "n9"
+        },
+        {
+            "genre": "Big Band",
+            "influence": "0x1.b82c9cfbaf8f4p-2",
+            "selfReference": "0x1.6eeebe4f081b3p+0",
+            "id": "n10"
+        },
+        {
+            "genre": "Holiday",
+            "influence": "0x1.07f0ff35c4421p+0",
+            "selfReference": "0x1.491ae16e56efcp+6",
+            "id": "n11"
+        },
+        {
+            "genre": "Singer/Songwriter",
+            "influence": "0x1.1623d13d717a1p+0",
+            "selfReference": "0x1.e44e8ecf5d735p+0",
+            "id": "n12"
+        },
+        {
+            "genre": "World",
+            "influence": "0x1.176eb0bf66a9p+0",
+            "selfReference": "0x1.37e87f818415dp+0",
+            "id": "n13"
+        },
+        {
+            "genre": "Soft Rock",
+            "influence": "0x1.b69a6d2ec653p+0",
+            "selfReference": "0x1.ddbc86c76f761p-6",
+            "id": "n14"
+        },
+        {
+            "genre": "Alternative",
+            "influence": "0x1.e351dd03f436bp-1",
+            "selfReference": "0x1.f2f881552892ap+0",
+            "id": "n15"
+        },
+        {
+            "genre": "Soundtrack",
+            "influence": "0x1.69ca51b22c343p+0",
+            "selfReference": "0x1.1d1e31adcc1acp+1",
+            "id": "n16"
+        },
+        {
+            "genre": "Soul",
+            "influence": "0x1.cbc3f2d5d7c4cp-3",
+            "selfReference": "0x1.dfbb7e11a4183p-2",
+            "id": "n17"
+        },
+        {
+            "genre": "Blues",
+            "influence": "0x1.2d081836eaa58p+0",
+            "selfReference": "0x1.eca6bde10231ep+2",
+            "id": "n18"
+        },
+        {
+            "genre": "Rock & Roll",
+            "influence": "0x1.2ef281828afabp-1",
+            "selfReference": "0x1.1a8a28c9b454ep-4",
+            "id": "n19"
+        },
+        {
+            "genre": "Christmas",
+            "influence": "0x1.613f9bf8dea65p-1",
+            "selfReference": "0x1.7095fdf03dbd7p+2",
+            "id": "n20"
+        },
+        {
+            "genre": "Musicals",
+            "influence": "0x1.957e35c2075ddp+0",
+            "selfReference": "0x0p+0",
+            "id": "n21"
+        },
+        {
+            "genre": "Samba",
+            "influence": "0x1.44313833c1c0fp-2",
+            "selfReference": "0x1.dfcf528056cd7p-3",
+            "id": "n22"
+        },
+        {
+            "genre": "South America",
+            "influence": "0x1.8fb31e7e5c859p-2",
+            "selfReference": "0x1.e62494b295101p-5",
+            "id": "n23"
+        },
+        {
+            "genre": "Hip-Hop/Rap",
+            "influence": "0x1.fbcf91602f97p-1",
+            "selfReference": "0x1.011529557712cp-1",
+            "id": "n24"
+        },
+        {
+            "genre": "French Pop",
+            "influence": "0x1.280fc76cb6f6bp+0",
+            "selfReference": "0x1.b41bef3e0edebp+0",
+            "id": "n25"
+        },
+        {
+            "genre": "Vocal",
+            "influence": "0x1.4cfa056961dfep+0",
+            "selfReference": "0x1.b45a648be61b1p+2",
+            "id": "n26"
+        },
+        {
+            "genre": "Folk",
+            "influence": "0x1.59a2cb9fb455dp-3",
+            "selfReference": "0x1.0dde20f908392p-4",
+            "id": "n27"
+        },
+        {
+            "genre": "Christian & Gospel",
+            "influence": "0x1.260daed1fc665p+0",
+            "selfReference": "0x1.787c44915bd3bp+2",
+            "id": "n28"
+        },
+        {
+            "genre": "Folk-Rock",
+            "influence": "0x1.36ac18cb495dp-1",
+            "selfReference": "0x1.cf6911ee6a0acp-6",
+            "id": "n29"
+        },
+        {
+            "genre": "Electric Blues",
+            "influence": "0x1.271714e51493ap+1",
+            "selfReference": "0x1.0f85b56c1d1e6p-6",
+            "id": "n30"
+        },
+        {
+            "genre": "Latino",
+            "influence": "0x1.3c1e449cf781ep+0",
+            "selfReference": "0x1.9fe764499c27dp+0",
+            "id": "n31"
+        },
+        {
+            "genre": "Children's Music",
+            "influence": "0x1.c8571574f81c1p-1",
+            "selfReference": "0x1.401aa5eb6693dp+2",
+            "id": "n32"
+        },
+        {
+            "genre": "Reggae",
+            "influence": "0x1.c684364fcfab8p-1",
+            "selfReference": "0x1.32842fd7c87ecp+2",
+            "id": "n33"
+        },
+        {
+            "genre": "Dance",
+            "influence": "0x1.d7bee5b2f69c8p-1",
+            "selfReference": "0x1.f9a923deaf313p+0",
+            "id": "n34"
+        },
+        {
+            "genre": "Brazilian",
+            "influence": "0x1.c8605b35b9fedp+0",
+            "selfReference": "0x1.c8a1dabe4d21bp+0",
+            "id": "n35"
+        },
+        {
+            "genre": "Punk",
+            "influence": "0x1.602bd8e2f7d5ep-1",
+            "selfReference": "0x1.80dff440b21c4p-1",
+            "id": "n36"
+        },
+        {
+            "genre": "Honky Tonk",
+            "influence": "0x1.67a41b3fdfa45p-2",
+            "selfReference": "0x0p+0",
+            "id": "n37"
+        },
+        {
+            "genre": "Afro-Beat",
+            "influence": "0x1.45cd064631d3fp+4",
+            "selfReference": "0x0p+0",
+            "id": "n38"
+        },
+        {
+            "genre": "Salsa y Tropical",
+            "influence": "0x1.f42a242345a66p-1",
+            "selfReference": "0x1.36053705f8717p+1",
+            "id": "n39"
+        },
+        {
+            "genre": "Comedy",
+            "influence": "0x1.69abf99d5edcp-1",
+            "selfReference": "0x1.fb5bef4ed0edcp-3",
+            "id": "n40"
+        },
+        {
+            "genre": "Traditional Celtic",
+            "influence": "0x1.301dbfc2ea04cp+7",
+            "selfReference": "0x0p+0",
+            "id": "n41"
+        },
+        {
+            "genre": "Electronic",
+            "influence": "0x1.bb42b59709e6cp-1",
+            "selfReference": "0x1.2811571bb9ce2p+0",
+            "id": "n42"
+        },
+        {
+            "genre": "Traditional Country",
+            "influence": "0x1.71ddf72bcf8cbp-3",
+            "selfReference": "0x1.0479a0bf8c55ap-5",
+            "id": "n43"
+        },
+        {
+            "genre": "New Age",
+            "influence": "0x1.4b3f9b32fe2a4p+0",
+            "selfReference": "0x1.936062a881da5p+1",
+            "id": "n44"
+        },
+        {
+            "genre": "Bossa Nova",
+            "influence": "0x1.848cedd18fda4p+1",
+            "selfReference": "0x1.56af2e18a5a51p-4",
+            "id": "n45"
+        },
+        {
+            "genre": "Vocal Pop",
+            "influence": "0x1.5f7cc88336a38p+0",
+            "selfReference": "0x1.6b9a6a3e71bc4p+1",
+            "id": "n46"
+        },
+        {
+            "genre": "New Wave",
+            "influence": "0x1.63cae60d12401p+0",
+            "selfReference": "0x1.8d1534febd80fp+0",
+            "id": "n47"
+        },
+        {
+            "genre": "Crossover Jazz",
+            "influence": "0x1.f555493cd7053p+3",
+            "selfReference": "0x0p+0",
+            "id": "n48"
+        },
+        {
+            "genre": "Ra\u00edces",
+            "influence": "0x1.7b67dcef65504p-1",
+            "selfReference": "0x1.71b9ee9934546p-1",
+            "id": "n49"
+        },
+        {
+            "genre": "Forr\u00f3",
+            "influence": "0x1.9b2a75fe029a1p+0",
+            "selfReference": "0x1.4dbdecd3cdf48p-4",
+            "id": "n50"
+        },
+        {
+            "genre": "German Pop",
+            "influence": "0x1.2ce921b729af1p+0",
+            "selfReference": "0x1.79ef77cb40e8cp-1",
+            "id": "n51"
+        },
+        {
+            "genre": "Pop/Rock",
+            "influence": "0x1.d690fa94a703ep-1",
+            "selfReference": "0x1.a475196993089p-3",
+            "id": "n52"
+        },
+        {
+            "genre": "Classical",
+            "influence": "0x1.0ca26ea4316e6p+0",
+            "selfReference": "0x1.49e503480dddbp+2",
+            "id": "n53"
+        },
+        {
+            "genre": "Pagode",
+            "influence": "0x1.ac3401c243b78p-1",
+            "selfReference": "0x1.6f37a94c97f2bp-5",
+            "id": "n54"
+        },
+        {
+            "genre": "Metal",
+            "influence": "0x1.18ace4d0d90dbp-1",
+            "selfReference": "0x1.7e6c231e40d71p-1",
+            "id": "n55"
+        },
+        {
+            "genre": "Christmas: Rock",
+            "influence": "0x1.8ee2ca92708c1p+0",
+            "selfReference": "0x0p+0",
+            "id": "n56"
+        },
+        {
+            "genre": "Classical Crossover",
+            "influence": "0x1.50ef52e78537cp-1",
+            "selfReference": "0x0p+0",
+            "id": "n57"
+        },
+        {
+            "genre": "Instrumental",
+            "influence": "0x1.08709224c793p-2",
+            "selfReference": "0x1.0d5cea8aec97ep-2",
+            "id": "n58"
+        },
+        {
+            "genre": "Disco",
+            "influence": "0x1.698b3236603e1p-1",
+            "selfReference": "0x1.f626c6c03d4bap-10",
+            "id": "n59"
+        },
+        {
+            "genre": "Baladas y Boleros",
+            "influence": "0x1.1f247ee7e1e0fp+0",
+            "selfReference": "0x1.e9733dfff5e6dp-1",
+            "id": "n60"
+        },
+        {
+            "genre": "Regional Mexicano",
+            "influence": "0x1.2e9ffcbb5b488p-1",
+            "selfReference": "0x1.417f8ba2985ccp+1",
+            "id": "n61"
+        },
+        {
+            "genre": "Latin Alternative & Rock",
+            "influence": "0x1.46c4c60838e44p+0",
+            "selfReference": "0x1.4658b4dfcde08p+0",
+            "id": "n62"
+        },
+        {
+            "genre": "Goth Rock",
+            "influence": "0x1.e08db8052da2ep-1",
+            "selfReference": "0x1.956f9e40959f2p-2",
+            "id": "n63"
+        },
+        {
+            "genre": "Industrial",
+            "influence": "0x1.2317efa24c2d5p+0",
+            "selfReference": "0x0p+0",
+            "id": "n64"
+        },
+        {
+            "genre": "Latin Pop",
+            "influence": "0x1.2505de6a5a707p+0",
+            "selfReference": "0x1.74e2f4dfbefadp+1",
+            "id": "n65"
+        },
+        {
+            "genre": "Electronica",
+            "influence": "0x1.57d116932fd1cp+0",
+            "selfReference": "0x1.17fea1c6b3d3p+0",
+            "id": "n66"
+        },
+        {
+            "genre": "Hard Rock",
+            "influence": "0x1.32270056385c9p-1",
+            "selfReference": "0x1.5e8fd4b127fdbp-3",
+            "id": "n67"
+        },
+        {
+            "genre": "Indie Rock",
+            "influence": "0x1.a85781706e9a6p-1",
+            "selfReference": "0x1.04092993f3952p-6",
+            "id": "n68"
+        },
+        {
+            "genre": "Vocal Jazz",
+            "influence": "0x1.2625d9c2503c6p-1",
+            "selfReference": "0x1.40a332b7f4746p-1",
+            "id": "n69"
+        },
+        {
+            "genre": "Funk",
+            "influence": "0x1.b885818932b87p-1",
+            "selfReference": "0x1.d20543a65ba19p-12",
+            "id": "n70"
+        },
+        {
+            "genre": "Gospel",
+            "influence": "0x1.2d30b094f5243p-1",
+            "selfReference": "0x1.6dddd8f1ab5f4p-2",
+            "id": "n71"
+        },
+        {
+            "genre": "Blues-Rock",
+            "influence": "0x1.773f96aa5fd35p+0",
+            "selfReference": "0x1.1459f1c111dbep+1",
+            "id": "n72"
+        },
+        {
+            "genre": "Spoken Word",
+            "influence": "0x1.09e020b4f297cp+0",
+            "selfReference": "0x1.b6df8cf5a84ep-7",
+            "id": "n73"
+        },
+        {
+            "genre": "Contemporary Folk",
+            "influence": "0x1.6f1fa83f4219p-3",
+            "selfReference": "0x1.a6daadf76e184p-9",
+            "id": "n74"
+        },
+        {
+            "genre": "Americana",
+            "influence": "0x1.d97ac73ba2b8cp-1",
+            "selfReference": "0x1.4871e5f4110fbp-1",
+            "id": "n75"
+        },
+        {
+            "genre": "Adult Contemporary",
+            "influence": "0x1.56b2968ae2da7p-3",
+            "selfReference": "0x1.a23a7762b662ap-2",
+            "id": "n76"
+        },
+        {
+            "genre": "Standards",
+            "influence": "0x1.70362e3758f42p-1",
+            "selfReference": "0x1.d6216f85e5da3p-4",
+            "id": "n77"
+        },
+        {
+            "genre": "Celtic",
+            "influence": "0x1.9c0304ab07508p-3",
+            "selfReference": "0x1.4b15dd66d2afbp-1",
+            "id": "n78"
+        },
+        {
+            "genre": "Traditional Pop",
+            "influence": "0x1.2c1464e8d0807p+0",
+            "selfReference": "0x0p+0",
+            "id": "n79"
+        },
+        {
+            "genre": "Traditional Folk",
+            "influence": "0x1.2fd7d09b34727p-1",
+            "selfReference": "0x1.7c1474d06c782p-2",
+            "id": "n80"
+        },
+        {
+            "genre": "Zydeco",
+            "influence": "0x1.22f6036ab5cb9p+1",
+            "selfReference": "0x1.f0de03b53e24fp+0",
+            "id": "n81"
+        },
+        {
+            "genre": "Fusion",
+            "influence": "0x1.db50a17e7e02ep-1",
+            "selfReference": "0x0p+0",
+            "id": "n82"
+        },
+        {
+            "genre": "Latin Jazz",
+            "influence": "0x1.45cfb1abc290ep+0",
+            "selfReference": "0x1.ce6b1c15c7367p-2",
+            "id": "n83"
+        },
+        {
+            "genre": "Hardcore Rap",
+            "influence": "0x1.48c3cdaebb165p-5",
+            "selfReference": "0x1.8fc20b95d1c9bp-12",
+            "id": "n84"
+        },
+        {
+            "genre": "Christmas: Jazz",
+            "influence": "0x1.9d84c51d782a3p+1",
+            "selfReference": "0x1.1a4d0b0e72ae4p+0",
+            "id": "n85"
+        },
+        {
+            "genre": "CCM",
+            "influence": "0x1.1cf61ed8fc8a4p-1",
+            "selfReference": "0x1.e35f8b5d9803ep-4",
+            "id": "n86"
+        },
+        {
+            "genre": "German Folk",
+            "influence": "0x1.2c1d74b0386f7p-2",
+            "selfReference": "0x1.5ec02b3a7f17dp-4",
+            "id": "n87"
+        },
+        {
+            "genre": "Tango",
+            "influence": "0x1.e7504e3b0330dp-4",
+            "selfReference": "0x1.5ab5a7aaf71cap-10",
+            "id": "n88"
+        },
+        {
+            "genre": "Latin Urban",
+            "influence": "0x1.beda635d5f20bp-2",
+            "selfReference": "0x1.19076791a5548p-1",
+            "id": "n89"
+        },
+        {
+            "genre": "Pop Punk",
+            "influence": "0x1.22a165a7cc7a9p+1",
+            "selfReference": "0x1.02e2a812db417p-9",
+            "id": "n90"
+        },
+        {
+            "genre": "College Rock",
+            "influence": "0x1.3df315789f79ep+0",
+            "selfReference": "0x0p+0",
+            "id": "n91"
+        },
+        {
+            "genre": "Arabic Pop",
+            "influence": "0x1.34ff9042dd592p+3",
+            "selfReference": "0x1.7704439cf79fbp-5",
+            "id": "n92"
+        },
+        {
+            "genre": "Adult Alternative",
+            "influence": "0x1.f8d7fd79fb91p-1",
+            "selfReference": "0x1.3e5bd0f58a002p-8",
+            "id": "n93"
+        },
+        {
+            "genre": "Contemporary Blues",
+            "influence": "0x1.35c4f39cf1542p+1",
+            "selfReference": "0x0p+0",
+            "id": "n94"
+        },
+        {
+            "genre": "Country Gospel",
+            "influence": "0x1.4b5e73a4dbe1fp+0",
+            "selfReference": "0x1.1ad3101df59c1p-3",
+            "id": "n95"
+        },
+        {
+            "genre": "Alternative Folk",
+            "influence": "0x1.5edefbacf6736p-4",
+            "selfReference": "0x0p+0",
+            "id": "n96"
+        },
+        {
+            "genre": "Prog-Rock/Art Rock",
+            "influence": "0x1.1d29dd3b35cf1p+0",
+            "selfReference": "0x1.ee7173054dacap-5",
+            "id": "n97"
+        },
+        {
+            "genre": "Arena Rock",
+            "influence": "0x1.c58ee08bd2d2bp-1",
+            "selfReference": "0x0p+0",
+            "id": "n98"
+        },
+        {
+            "genre": "Old School Rap",
+            "influence": "0x1.58a1eb829e3e6p-3",
+            "selfReference": "0x0p+0",
+            "id": "n99"
+        },
+        {
+            "genre": "Calypso",
+            "influence": "0x1.3d516a030b5c8p+1",
+            "selfReference": "0x0p+0",
+            "id": "n100"
+        },
+        {
+            "genre": "Ragtime",
+            "influence": "0x1.8339434a9106dp+1",
+            "selfReference": "0x0p+0",
+            "id": "n101"
+        },
+        {
+            "genre": "Bluegrass",
+            "influence": "0x1.15d0f5cdb833fp+0",
+            "selfReference": "0x1.755ea1876d28fp-3",
+            "id": "n102"
+        },
+        {
+            "genre": "Roots Rock",
+            "influence": "0x1.d8ffc3118f9dfp-3",
+            "selfReference": "0x0p+0",
+            "id": "n103"
+        },
+        {
+            "genre": "Classic Blues",
+            "influence": "0x1.452a275a6a021p-2",
+            "selfReference": "0x0p+0",
+            "id": "n104"
+        },
+        {
+            "genre": "Classics",
+            "influence": "0x1.1d3bc989b2e9bp-1",
+            "selfReference": "0x0p+0",
+            "id": "n105"
+        },
+        {
+            "genre": "West Coast Rap",
+            "influence": "0x1.df83fc5e6d61fp+0",
+            "selfReference": "0x1.3cdcaef48f269p-5",
+            "id": "n106"
+        },
+        {
+            "genre": "Techno",
+            "influence": "0x1.668909ba7f8eap-2",
+            "selfReference": "0x0p+0",
+            "id": "n107"
+        },
+        {
+            "genre": "Bop",
+            "influence": "0x1.31c48123b52dp-3",
+            "selfReference": "0x1.f5152260fd074p-4",
+            "id": "n108"
+        },
+        {
+            "genre": "Sertanejo",
+            "influence": "0x1.13d814dc9c7c1p-1",
+            "selfReference": "0x1.633c5aeaebd36p-2",
+            "id": "n109"
+        },
+        {
+            "genre": "East Coast Rap",
+            "influence": "0x1.dfb19f019ac58p+1",
+            "selfReference": "0x1.010725cdbe83bp-10",
+            "id": "n110"
+        },
+        {
+            "genre": "Traditional Gospel",
+            "influence": "0x1.53f5a1236d08ep-1",
+            "selfReference": "0x0p+0",
+            "id": "n111"
+        },
+        {
+            "genre": "Christian Rock",
+            "influence": "0x1.cb9f647c0ac7ap-1",
+            "selfReference": "0x1.e531a85a498d6p-1",
+            "id": "n112"
+        },
+        {
+            "genre": "Contemporary Latin",
+            "influence": "0x1.2b4afdd1270a9p-1",
+            "selfReference": "0x1.72d529de13539p-6",
+            "id": "n113"
+        },
+        {
+            "genre": "Mystery",
+            "influence": "0x1.5354937d29d18p+0",
+            "selfReference": "0x1.b49a6d52c32d9p-9",
+            "id": "n114"
+        },
+        {
+            "genre": "Ax\u00e9",
+            "influence": "0x1.0d8f905d7e33dp-1",
+            "selfReference": "0x1.a88c2fe0d3c5p-5",
+            "id": "n115"
+        },
+        {
+            "genre": "Chicago Blues",
+            "influence": "0x1.406e6bd2aea0cp-3",
+            "selfReference": "0x0p+0",
+            "id": "n116"
+        },
+        {
+            "genre": "Hip-Hop",
+            "influence": "0x1.e0a82a9ef2898p-3",
+            "selfReference": "0x1.73c63c0b11c6ep-4",
+            "id": "n117"
+        },
+        {
+            "genre": "Death Metal/Black Metal",
+            "influence": "0x1.34acf133aa33bp-2",
+            "selfReference": "0x1.eacd64ba9a7f1p-6",
+            "id": "n118"
+        },
+        {
+            "genre": "Hard Bop",
+            "influence": "0x1.2e34527bd32dp-1",
+            "selfReference": "0x0p+0",
+            "id": "n119"
+        },
+        {
+            "genre": "Downtempo",
+            "influence": "0x1.012e7e8c75bp+0",
+            "selfReference": "0x0p+0",
+            "id": "n120"
+        },
+        {
+            "genre": "Ska",
+            "influence": "0x1.6379a2eaebea8p-3",
+            "selfReference": "0x1.f2236a84807a9p-3",
+            "id": "n121"
+        },
+        {
+            "genre": "Rockabilly",
+            "influence": "0x1.3fbf106b5b9dep-1",
+            "selfReference": "0x0p+0",
+            "id": "n122"
+        },
+        {
+            "genre": "Gangsta Rap",
+            "influence": "0x1.1ef91092dade2p-2",
+            "selfReference": "0x1.e12a9eb56f8cfp-10",
+            "id": "n123"
+        },
+        {
+            "genre": "Contemporary Gospel",
+            "influence": "0x1.ada671c4478a4p+0",
+            "selfReference": "0x1.42133a5ccc163p-2",
+            "id": "n124"
+        },
+        {
+            "genre": "Karaoke",
+            "influence": "0x1.a17a28299b0ddp-2",
+            "selfReference": "0x1.814d94ef89b9cp-7",
+            "id": "n125"
+        },
+        {
+            "genre": "British Invasion",
+            "influence": "0x1.1cd7c5dce97fp-2",
+            "selfReference": "0x1.410d4cf1a0f33p-1",
+            "id": "n126"
+        },
+        {
+            "genre": "Delta Blues",
+            "influence": "0x1.8e203c7d21d7p-2",
+            "selfReference": "0x0p+0",
+            "id": "n127"
+        },
+        {
+            "genre": "Urban Cowboy",
+            "influence": "0x1.87ae6bf2bdbf7p-1",
+            "selfReference": "0x0p+0",
+            "id": "n128"
+        },
+        {
+            "genre": "Polka",
+            "influence": "0x1.8244522605a6fp+2",
+            "selfReference": "0x0p+0",
+            "id": "n129"
+        },
+        {
+            "genre": "Smooth Jazz",
+            "influence": "0x1.beeec3de9b223p-2",
+            "selfReference": "0x0p+0",
+            "id": "n130"
+        },
+        {
+            "genre": "Britpop",
+            "influence": "0x1.5a77c33d45b2ap-2",
+            "selfReference": "0x0p+0",
+            "id": "n131"
+        },
+        {
+            "genre": "Indian",
+            "influence": "0x1.010b7245460fdp+0",
+            "selfReference": "0x0p+0",
+            "id": "n132"
+        },
+        {
+            "genre": "Dixieland",
+            "influence": "0x1.1a8a22294fb28p-1",
+            "selfReference": "0x1.567d598f9f8e6p-3",
+            "id": "n133"
+        },
+        {
+            "genre": "Fiction",
+            "influence": "0x1.e3135f747a154p+0",
+            "selfReference": "0x0p+0",
+            "id": "n134"
+        },
+        {
+            "genre": "J-Pop",
+            "influence": "0x1.e487cdab5d635p-2",
+            "selfReference": "0x1.3b0652bc6db93p-4",
+            "id": "n135"
+        },
+        {
+            "genre": "Psychedelic",
+            "influence": "0x1.018ed1da91d2ap-2",
+            "selfReference": "0x1.4a1d45d73acdp-5",
+            "id": "n136"
+        },
+        {
+            "genre": "Contemporary Jazz",
+            "influence": "0x1.6f121545bdaf6p-6",
+            "selfReference": "0x1.0c5fa1395fc97p-8",
+            "id": "n137"
+        },
+        {
+            "genre": "Avant-Garde Jazz",
+            "influence": "0x1.cca07d395f11p+1",
+            "selfReference": "0x0p+0",
+            "id": "n138"
+        },
+        {
+            "genre": "House",
+            "influence": "0x1.050b7ab32700dp-4",
+            "selfReference": "0x0p+0",
+            "id": "n139"
+        },
+        {
+            "genre": "Alternative Rap",
+            "influence": "0x1.101cf029d97cep-1",
+            "selfReference": "0x0p+0",
+            "id": "n140"
+        },
+        {
+            "genre": "Standup Comedy",
+            "influence": "0x1.07dac65e0adb2p+1",
+            "selfReference": "0x0p+0",
+            "id": "n141"
+        },
+        {
+            "genre": "Music",
+            "influence": "0x1.6312103b8bae1p+0",
+            "selfReference": "0x1.44cd7dbc9ae02p-3",
+            "id": "n142"
+        },
+        {
+            "genre": "Kids & Young Adults",
+            "influence": "0x1.82854ee1c539ap+1",
+            "selfReference": "0x0p+0",
+            "id": "n143"
+        },
+        {
+            "genre": "Cajun",
+            "influence": "0x1.0245c37be4d1fp+2",
+            "selfReference": "0x0p+0",
+            "id": "n144"
+        },
+        {
+            "genre": "Hardcore",
+            "influence": "0x1.232a381610ee6p+0",
+            "selfReference": "0x0p+0",
+            "id": "n145"
+        },
+        {
+            "genre": "Sufi",
+            "influence": "0x1.301dbfc2ea04cp+7",
+            "selfReference": "0x0p+0",
+            "id": "n146"
+        },
+        {
+            "genre": "Breakbeat",
+            "influence": "0x1.cd2cb00c4c283p+2",
+            "selfReference": "0x0p+0",
+            "id": "n147"
+        },
+        {
+            "genre": "Acoustic Blues",
+            "influence": "0x1.3521bfee639aap-2",
+            "selfReference": "0x1.3914b97baba8p-2",
+            "id": "n148"
+        },
+        {
+            "genre": "Contemporary Country",
+            "influence": "0x1.46cc22f748d9fp-3",
+            "selfReference": "0x1.7f9f15e1a8ef1p-6",
+            "id": "n149"
+        },
+        {
+            "genre": "Glam Rock",
+            "influence": "0x1.c1d3726082abp-1",
+            "selfReference": "0x1.2499307c4c652p-5",
+            "id": "n150"
+        },
+        {
+            "genre": "Europe",
+            "influence": "0x1.d3a59c39800cp-1",
+            "selfReference": "0x0p+0",
+            "id": "n151"
+        },
+        {
+            "genre": "Christmas: Pop",
+            "influence": "0x1.855b0b6c3d207p-1",
+            "selfReference": "0x0p+0",
+            "id": "n152"
+        },
+        {
+            "genre": "Drama & Poetry",
+            "influence": "0x1.01f8c8204cdb1p+2",
+            "selfReference": "0x0p+0",
+            "id": "n153"
+        },
+        {
+            "genre": "Hawaii",
+            "influence": "0x1.fe96078a02d3ap+0",
+            "selfReference": "0x0p+0",
+            "id": "n154"
+        },
+        {
+            "genre": "Trance",
+            "influence": "0x1.ceecf6c190901p-6",
+            "selfReference": "0x0p+0",
+            "id": "n155"
+        },
+        {
+            "genre": "Africa",
+            "influence": "0x1.57d76f6055492p+0",
+            "selfReference": "0x0p+0",
+            "id": "n156"
+        },
+        {
+            "genre": "Novelty",
+            "influence": "0x1.ac9d9e816d8e4p-1",
+            "selfReference": "0x0p+0",
+            "id": "n157"
+        },
+        {
+            "genre": "Southern Rock",
+            "influence": "0x1.0135c806f5881p-1",
+            "selfReference": "0x0p+0",
+            "id": "n158"
+        },
+        {
+            "genre": "K-Pop",
+            "influence": "0x1.03e1d66d17ffbp-3",
+            "selfReference": "0x1.5b61d594464e7p-11",
+            "id": "n159"
+        },
+        {
+            "genre": "Surf",
+            "influence": "0x1.b6a5d70c93d97p-4",
+            "selfReference": "0x0p+0",
+            "id": "n160"
+        },
+        {
+            "genre": "Contemporary Bluegrass",
+            "influence": "0x1.0b48ed3c51586p+0",
+            "selfReference": "0x0p+0",
+            "id": "n161"
+        },
+        {
+            "genre": "Teen Pop",
+            "influence": "0x1.0359460da5221p-1",
+            "selfReference": "0x0p+0",
+            "id": "n162"
+        },
+        {
+            "genre": "Contemporary Celtic",
+            "influence": "0x1.1d2d09c3e8188p-1",
+            "selfReference": "0x1.b787c20a778f3p-3",
+            "id": "n163"
+        },
+        {
+            "genre": "Dub",
+            "influence": "0x1.5fbd2508c3bc9p-4",
+            "selfReference": "0x0p+0",
+            "id": "n164"
+        },
+        {
+            "genre": "Modern Era",
+            "influence": "0x1.fe3d822705ff1p+1",
+            "selfReference": "0x0p+0",
+            "id": "n165"
+        },
+        {
+            "genre": "Arts & Entertainment",
+            "influence": "0x1.f8e3f3349ac7dp+0",
+            "selfReference": "0x0p+0",
+            "id": "n166"
+        },
+        {
+            "genre": "Christmas: Classical",
+            "influence": "0x0p+0",
+            "selfReference": "0x0p+0",
+            "id": "n167"
+        },
+        {
+            "genre": "Opera",
+            "influence": "0x1.1604bcc9ce3p+0",
+            "selfReference": "0x0p+0",
+            "id": "n168"
+        },
+        {
+            "genre": "Christmas: Religious",
+            "influence": "0x1.13b6d5f0e7b58p-3",
+            "selfReference": "0x0p+0",
+            "id": "n169"
+        },
+        {
+            "genre": "Trad Jazz",
+            "influence": "0x1.100eee1da692p+1",
+            "selfReference": "0x0p+0",
+            "id": "n170"
+        },
+        {
+            "genre": "Alternative Country",
+            "influence": "0x1.51119d824541fp-1",
+            "selfReference": "0x0p+0",
+            "id": "n171"
+        },
+        {
+            "genre": "Southern Gospel",
+            "influence": "0x1.85db86e37c715p+0",
+            "selfReference": "0x0p+0",
+            "id": "n172"
+        },
+        {
+            "genre": "Fitness & Workout",
+            "influence": "0x1.dce454748e116p+0",
+            "selfReference": "0x0p+0",
+            "id": "n173"
+        },
+        {
+            "genre": "Original Score",
+            "influence": "0x1.eef1a6b7e23a1p-2",
+            "selfReference": "0x0p+0",
+            "id": "n174"
+        },
+        {
+            "genre": "Contemporary Singer/Songwriter",
+            "influence": "0x1.f2b1e88c70904p-1",
+            "selfReference": "0x0p+0",
+            "id": "n175"
+        },
+        {
+            "genre": "Anime",
+            "influence": "0x1.318300531292cp-1",
+            "selfReference": "0x0p+0",
+            "id": "n176"
+        },
+        {
+            "genre": "Christian Metal",
+            "influence": "0x1.fa402f8364735p+0",
+            "selfReference": "0x0p+0",
+            "id": "n177"
+        },
+        {
+            "genre": "Self Development",
+            "influence": "0x1.927537046e866p-1",
+            "selfReference": "0x0p+0",
+            "id": "n178"
+        },
+        {
+            "genre": "EMO",
+            "influence": "0x1.10d7d060c1838p+1",
+            "selfReference": "0x0p+0",
+            "id": "n179"
+        },
+        {
+            "genre": "Roots Reggae",
+            "influence": "0x1.294a287b97cf4p-1",
+            "selfReference": "0x0p+0",
+            "id": "n180"
+        },
+        {
+            "genre": "Biography & Memoir",
+            "influence": "0x1.4a10e565f2777p-2",
+            "selfReference": "0x0p+0",
+            "id": "n181"
+        },
+        {
+            "genre": "Neo-Soul",
+            "influence": "0x1.b441b6b4f9b4ap-2",
+            "selfReference": "0x0p+0",
+            "id": "n182"
+        },
+        {
+            "genre": "Hair Metal",
+            "influence": "0x1.22b566f81c518p-1",
+            "selfReference": "0x0p+0",
+            "id": "n183"
+        },
+        {
+            "genre": "Asia",
+            "influence": "0x1.159cc426a59a8p-6",
+            "selfReference": "0x0p+0",
+            "id": "n184"
+        },
+        {
+            "genre": "Praise & Worship",
+            "influence": "0x1.f7aed730b9453p-1",
+            "selfReference": "0x0p+0",
+            "id": "n185"
+        },
+        {
+            "genre": "Christian Rap",
+            "influence": "0x1.8645c214cd113p+0",
+            "selfReference": "0x0p+0",
+            "id": "n186"
+        },
+        {
+            "genre": "Bollywood",
+            "influence": "0x1.e34f8023a9db8p-1",
+            "selfReference": "0x1.ac6bf59e458fbp-2",
+            "id": "n187"
+        },
+        {
+            "genre": "Traditional Bluegrass",
+            "influence": "0x1.ad51e5fb7044p+0",
+            "selfReference": "0x0p+0",
+            "id": "n188"
+        },
+        {
+            "genre": "Country Blues",
+            "influence": "0x1.8a677f574bcc3p-4",
+            "selfReference": "0x0p+0",
+            "id": "n189"
+        },
+        {
+            "genre": "Caribbean",
+            "influence": "0x1.d9631d86fb71ep-1",
+            "selfReference": "0x0p+0",
+            "id": "n190"
+        },
+        {
+            "genre": "Dirty South",
+            "influence": "0x1.3a10037942e58p-2",
+            "selfReference": "0x1.63828ed5a0a96p-12",
+            "id": "n191"
+        },
+        {
+            "genre": "Indo Pop",
+            "influence": "0x1.14efef149088bp+1",
+            "selfReference": "0x1.d98a22bde1922p-6",
+            "id": "n192"
+        },
+        {
+            "genre": "Orchestral",
+            "influence": "0x1.895a4c7eb50d1p-3",
+            "selfReference": "0x0p+0",
+            "id": "n193"
+        },
+        {
+            "genre": "Latin Rap",
+            "influence": "0x1.06937860878cbp-1",
+            "selfReference": "0x0p+0",
+            "id": "n194"
+        },
+        {
+            "genre": "Lullabies",
+            "influence": "0x1.288afb3326ca9p-2",
+            "selfReference": "0x0p+0",
+            "id": "n195"
+        },
+        {
+            "genre": "Contemporary R&B",
+            "influence": "0x1.cd0de8dc06f2p-3",
+            "selfReference": "0x0p+0",
+            "id": "n196"
+        },
+        {
+            "genre": "Doo Wop",
+            "influence": "0x1.fa1af5fba101dp-4",
+            "selfReference": "0x1.da5fa4198e42cp-3",
+            "id": "n197"
+        },
+        {
+            "genre": "Christian Pop",
+            "influence": "0x1.1ceb21b739f55p-3",
+            "selfReference": "0x0p+0",
+            "id": "n198"
+        },
+        {
+            "genre": "Rap",
+            "influence": "0x1.4fdea5c472ad9p-3",
+            "selfReference": "0x1.4892f249140d4p-8",
+            "id": "n199"
+        },
+        {
+            "genre": "Japan",
+            "influence": "0x1.301dbfc2ea04cp+7",
+            "selfReference": "0x0p+0",
+            "id": "n200"
+        },
+        {
+            "genre": "Drama",
+            "influence": "0x1.5c0cf5ee5d873p-1",
+            "selfReference": "0x0p+0",
+            "id": "n201"
+        },
+        {
+            "genre": "American Trad Rock",
+            "influence": "0x1.261af99b7a7fp-3",
+            "selfReference": "0x1.8d4d8409d7297p-10",
+            "id": "n202"
+        },
+        {
+            "genre": "Halloween",
+            "influence": "0x1.9f97fa70d5691p+0",
+            "selfReference": "0x0p+0",
+            "id": "n203"
+        },
+        {
+            "genre": "Arabic",
+            "influence": "0x1.b73d439bd0189p-9",
+            "selfReference": "0x0p+0",
+            "id": "n204"
+        },
+        {
+            "genre": "Dubstep",
+            "influence": "0x1.0bd1cc16cc492p-6",
+            "selfReference": "0x0p+0",
+            "id": "n205"
+        },
+        {
+            "genre": "Fado",
+            "influence": "0x1.0aaf6b66d91b6p+0",
+            "selfReference": "0x0p+0",
+            "id": "n206"
+        },
+        {
+            "genre": "Ambient",
+            "influence": "0x1.1c49792746c7ep+2",
+            "selfReference": "0x0p+0",
+            "id": "n207"
+        },
+        {
+            "genre": "Sing-Along",
+            "influence": "0x1.c21fb3261b57cp+0",
+            "selfReference": "0x0p+0",
+            "id": "n208"
+        },
+        {
+            "genre": "Nonfiction",
+            "influence": "0x1.6c520618b9d1dp-5",
+            "selfReference": "0x0p+0",
+            "id": "n209"
+        },
+        {
+            "genre": "Mainstream Jazz",
+            "influence": "0x1.47c72ead98c36p-6",
+            "selfReference": "0x0p+0",
+            "id": "n210"
+        },
+        {
+            "genre": "Underground Rap",
+            "influence": "0x1.f31b50e1ef7f7p-3",
+            "selfReference": "0x0p+0",
+            "id": "n211"
+        },
+        {
+            "genre": "Outlaw Country",
+            "influence": "0x1.201fa01d8775p-3",
+            "selfReference": "0x1.2acaf5afd18dep-4",
+            "id": "n212"
+        },
+        {
+            "genre": "Afro-Pop",
+            "influence": "0x1.0e9450d6348e9p-1",
+            "selfReference": "0x0p+0",
+            "id": "n213"
+        },
+        {
+            "genre": "Worldbeat",
+            "influence": "0x1.169e386782312p-1",
+            "selfReference": "0x0p+0",
+            "id": "n214"
+        },
+        {
+            "genre": "Christmas: Children's",
+            "influence": "0x1.a2fe1093f517ep-1",
+            "selfReference": "0x0p+0",
+            "id": "n215"
+        },
+        {
+            "genre": "Baile Funk",
+            "influence": "0x1.93d803729ca5p+0",
+            "selfReference": "0x0p+0",
+            "id": "n216"
+        },
+        {
+            "genre": "Indian Pop",
+            "influence": "0x1.1c1b13c786ea4p-3",
+            "selfReference": "0x0p+0",
+            "id": "n217"
+        },
+        {
+            "genre": "Oldies",
+            "influence": "0x1.f0b653a70436p-7",
+            "selfReference": "0x0p+0",
+            "id": "n218"
+        },
+        {
+            "genre": "Motown",
+            "influence": "0x1.ea588a9b47f19p-5",
+            "selfReference": "0x0p+0",
+            "id": "n219"
+        },
+        {
+            "genre": "Modern Dancehall",
+            "influence": "0x1.00b9a0044eec7p-5",
+            "selfReference": "0x0p+0",
+            "id": "n220"
+        },
+        {
+            "genre": "France",
+            "influence": "0x1.cbed6b648171p-5",
+            "selfReference": "0x0p+0",
+            "id": "n221"
+        },
+        {
+            "genre": "Business",
+            "influence": "0x1.5fa4ad83c4042p-8",
+            "selfReference": "0x0p+0",
+            "id": "n222"
+        },
+        {
+            "genre": "Devotional & Spiritual",
+            "influence": "0x0p+0",
+            "selfReference": "0x0p+0",
+            "id": "n223"
+        },
+        {
+            "genre": "Jam Bands",
+            "influence": "0x0p+0",
+            "selfReference": "0x0p+0",
+            "id": "n224"
+        },
+        {
+            "genre": "TV Soundtrack",
+            "influence": "0x1.388e46857817p-5",
+            "selfReference": "0x0p+0",
+            "id": "n225"
+        },
+        {
+            "genre": "Tex-Mex",
+            "influence": "0x1.6b9f14b2b2767p-3",
+            "selfReference": "0x0p+0",
+            "id": "n226"
+        },
+        {
+            "genre": "Flamenco",
+            "influence": "0x0p+0",
+            "selfReference": "0x0p+0",
+            "id": "n227"
+        },
+        {
+            "genre": "Cool",
+            "influence": "0x0p+0",
+            "selfReference": "0x0p+0",
+            "id": "n228"
+        },
+        {
+            "genre": "Indie Pop",
+            "influence": "0x1.460c092e8a11p-9",
+            "selfReference": "0x0p+0",
+            "id": "n229"
+        },
+        {
+            "genre": "Relaxation",
+            "influence": "0x0p+0",
+            "selfReference": "0x0p+0",
+            "id": "n230"
+        }
+    ],
+    "links": [
+        {
+            "num": 1262186,
+            "weight": 538849.4875470535,
+            "id": "e1524",
+            "source": "n0",
+            "target": "n9"
+        },
+        {
+            "num": 955063,
+            "weight": 459646.2273417956,
+            "id": "e4205",
+            "source": "n0",
+            "target": "n26"
+        },
+        {
+            "num": 424348,
+            "weight": 154239.2789014784,
+            "id": "e3178",
+            "source": "n0",
+            "target": "n18"
+        },
+        {
+            "num": 194855,
+            "weight": 94781.615098846,
+            "id": "e7163",
+            "source": "n0",
+            "target": "n46"
+        },
+        {
+            "num": 212483,
+            "weight": 84487.42623055918,
+            "id": "e2845",
+            "source": "n0",
+            "target": "n16"
+        },
+        {
+            "num": 214978,
+            "weight": 83929.59361213475,
+            "id": "e7962",
+            "source": "n0",
+            "target": "n53"
+        },
+        {
+            "num": 248616,
+            "weight": 81881.91505755368,
+            "id": "e2064",
+            "source": "n0",
+            "target": "n12"
+        },
+        {
+            "num": 215215,
+            "weight": 69890.82667929458,
+            "id": "e1264",
+            "source": "n0",
+            "target": "n7"
+        },
+        {
+            "num": 174254,
+            "weight": 59069.79434094221,
+            "id": "e6907",
+            "source": "n0",
+            "target": "n44"
+        },
+        {
+            "num": 110709,
+            "weight": 44187.77797449213,
+            "id": "e2274",
+            "source": "n0",
+            "target": "n13"
+        },
+        {
+            "num": 104908,
+            "weight": 30683.226650134362,
+            "id": "e549",
+            "source": "n0",
+            "target": "n3"
+        },
+        {
+            "num": 85796,
+            "weight": 28744.637119415187,
+            "id": "e4987",
+            "source": "n0",
+            "target": "n31"
+        },
+        {
+            "num": 70720,
+            "weight": 27613.276865861404,
+            "id": "e5782",
+            "source": "n0",
+            "target": "n35"
+        },
+        {
+            "num": 64256,
+            "weight": 26868.986727045714,
+            "id": "e1741",
+            "source": "n0",
+            "target": "n10"
+        },
+        {
+            "num": 64646,
+            "weight": 25464.726987205788,
+            "id": "e9828",
+            "source": "n0",
+            "target": "n69"
+        },
+        {
+            "num": 4736,
+            "weight": 13317.514499121042,
+            "id": "e7480",
+            "source": "n0",
+            "target": "n48"
+        },
+        {
+            "num": 34787,
+            "weight": 9706.574590818807,
+            "id": "e5176",
+            "source": "n0",
+            "target": "n32"
+        },
+        {
+            "num": 3635,
+            "weight": 9553.860646262612,
+            "id": "e3664",
+            "source": "n0",
+            "target": "n21"
+        },
+        {
+            "num": 28653,
+            "weight": 8903.690292054232,
+            "id": "e11265",
+            "source": "n0",
+            "target": "n83"
+        },
+        {
+            "num": 17324,
+            "weight": 7446.147465034822,
+            "id": "e722",
+            "source": "n0",
+            "target": "n4"
+        },
+        {
+            "num": 1433,
+            "weight": 6455.816545769998,
+            "id": "e15837",
+            "source": "n0",
+            "target": "n153"
+        },
+        {
+            "num": 33094,
+            "weight": 6336.787845895477,
+            "id": "e4036",
+            "source": "n0",
+            "target": "n25"
+        },
+        {
+            "num": 1653,
+            "weight": 6058.571333881866,
+            "id": "e16361",
+            "source": "n0",
+            "target": "n166"
+        },
+        {
+            "num": 14751,
+            "weight": 5874.56584554708,
+            "id": "e6395",
+            "source": "n0",
+            "target": "n40"
+        },
+        {
+            "num": 17316,
+            "weight": 5178.657902941459,
+            "id": "e10797",
+            "source": "n0",
+            "target": "n77"
+        },
+        {
+            "num": 1141,
+            "weight": 4680.402307109851,
+            "id": "e12613",
+            "source": "n0",
+            "target": "n101"
+        },
+        {
+            "num": 23313,
+            "weight": 4678.320834612414,
+            "id": "e8524",
+            "source": "n0",
+            "target": "n58"
+        },
+        {
+            "num": 8298,
+            "weight": 4239.450794495195,
+            "id": "e10935",
+            "source": "n0",
+            "target": "n79"
+        },
+        {
+            "num": 7237,
+            "weight": 3811.099531186567,
+            "id": "e13892",
+            "source": "n0",
+            "target": "n119"
+        },
+        {
+            "num": 14835,
+            "weight": 3577.1856677226415,
+            "id": "e16456",
+            "source": "n0",
+            "target": "n170"
+        },
+        {
+            "num": 9841,
+            "weight": 2684.519248328617,
+            "id": "e1444",
+            "source": "n0",
+            "target": "n8"
+        },
+        {
+            "num": 5032,
+            "weight": 2451.7453816815564,
+            "id": "e10355",
+            "source": "n0",
+            "target": "n73"
+        },
+        {
+            "num": 8295,
+            "weight": 2379.120846987183,
+            "id": "e12651",
+            "source": "n0",
+            "target": "n102"
+        },
+        {
+            "num": 5971,
+            "weight": 2037.2352679324677,
+            "id": "e15252",
+            "source": "n0",
+            "target": "n142"
+        },
+        {
+            "num": 4444,
+            "weight": 1965.2485601319859,
+            "id": "e230",
+            "source": "n0",
+            "target": "n1"
+        },
+        {
+            "num": 1516,
+            "weight": 1751.597156810421,
+            "id": "e12411",
+            "source": "n0",
+            "target": "n97"
+        },
+        {
+            "num": 16002,
+            "weight": 1479.2765570525332,
+            "id": "e8435",
+            "source": "n0",
+            "target": "n57"
+        },
+        {
+            "num": 2753,
+            "weight": 1262.2372635578638,
+            "id": "e14838",
+            "source": "n0",
+            "target": "n134"
+        },
+        {
+            "num": 6811,
+            "weight": 1107.53689801397,
+            "id": "e11035",
+            "source": "n0",
+            "target": "n80"
+        },
+        {
+            "num": 11831,
+            "weight": 1020.5063907592194,
+            "id": "e12982",
+            "source": "n0",
+            "target": "n108"
+        },
+        {
+            "num": 2856,
+            "weight": 1011.9864691443167,
+            "id": "e11225",
+            "source": "n0",
+            "target": "n82"
+        },
+        {
+            "num": 5336,
+            "weight": 925.7184203365912,
+            "id": "e208",
+            "source": "n0",
+            "target": "n222"
+        },
+        {
+            "num": 1442,
+            "weight": 870.7223578713289,
+            "id": "e13490",
+            "source": "n0",
+            "target": "n114"
+        },
+        {
+            "num": 1915,
+            "weight": 837.8444232783324,
+            "id": "e15471",
+            "source": "n0",
+            "target": "n148"
+        },
+        {
+            "num": 6784,
+            "weight": 831.8735919159776,
+            "id": "e14791",
+            "source": "n0",
+            "target": "n133"
+        },
+        {
+            "num": 609,
+            "weight": 703.998435386729,
+            "id": "e17802",
+            "source": "n0",
+            "target": "n210"
+        },
+        {
+            "num": 510,
+            "weight": 662.220120956337,
+            "id": "e16979",
+            "source": "n0",
+            "target": "n181"
+        },
+        {
+            "num": 1314,
+            "weight": 644.9552361993902,
+            "id": "e14649",
+            "source": "n0",
+            "target": "n130"
+        },
+        {
+            "num": 2769,
+            "weight": 528.6516727134832,
+            "id": "e16632",
+            "source": "n0",
+            "target": "n174"
+        },
+        {
+            "num": 3515,
+            "weight": 439.47869314294786,
+            "id": "e15065",
+            "source": "n0",
+            "target": "n138"
+        },
+        {
+            "num": 1903,
+            "weight": 368.4929799090862,
+            "id": "e7090",
+            "source": "n0",
+            "target": "n45"
+        },
+        {
+            "num": 2369,
+            "weight": 273.3563206499608,
+            "id": "e9200",
+            "source": "n0",
+            "target": "n64"
+        },
+        {
+            "num": 796,
+            "weight": 245.64071880706345,
+            "id": "e13406",
+            "source": "n0",
+            "target": "n113"
+        },
+        {
+            "num": 927,
+            "weight": 220.7018007481635,
+            "id": "e16847",
+            "source": "n0",
+            "target": "n178"
+        },
+        {
+            "num": 371,
+            "weight": 215.4590386186906,
+            "id": "e15893",
+            "source": "n0",
+            "target": "n154"
+        },
+        {
+            "num": 1655,
+            "weight": 190.38813941502679,
+            "id": "e15214",
+            "source": "n0",
+            "target": "n141"
+        },
+        {
+            "num": 3221,
+            "weight": 186.05801646108475,
+            "id": "e12348",
+            "source": "n0",
+            "target": "n96"
+        },
+        {
+            "num": 1290,
+            "weight": 167.5725560580391,
+            "id": "e216",
+            "source": "n0",
+            "target": "n230"
+        },
+        {
+            "num": 870,
+            "weight": 167.12603708195084,
+            "id": "e17336",
+            "source": "n0",
+            "target": "n193"
+        },
+        {
+            "num": 308,
+            "weight": 164.5700971875781,
+            "id": "e214",
+            "source": "n0",
+            "target": "n228"
+        },
+        {
+            "num": 992,
+            "weight": 121.93939029022974,
+            "id": "e16025",
+            "source": "n0",
+            "target": "n157"
+        },
+        {
+            "num": 144,
+            "weight": 70.94735934698006,
+            "id": "e12819",
+            "source": "n0",
+            "target": "n105"
+        },
+        {
+            "num": 641,
+            "weight": 34.930637420541345,
+            "id": "e6209",
+            "source": "n0",
+            "target": "n38"
+        },
+        {
+            "num": 22,
+            "weight": 5.196641478856117,
+            "id": "e215",
+            "source": "n0",
+            "target": "n229"
+        },
+        {
+            "num": 673,
+            "weight": 26.919284440919657,
+            "id": "e7660",
+            "source": "n1",
+            "target": "n50"
+        },
+        {
+            "num": 807337,
+            "weight": 170503.43749292745,
+            "id": "e1040",
+            "source": "n2",
+            "target": "n6"
+        },
+        {
+            "num": 2177,
+            "weight": 697.8290580913982,
+            "id": "e12269",
+            "source": "n2",
+            "target": "n95"
+        },
+        {
+            "num": 2793,
+            "weight": 652.3853020278466,
+            "id": "e6107",
+            "source": "n2",
+            "target": "n37"
+        },
+        {
+            "num": 2605,
+            "weight": 402.4859509879134,
+            "id": "e6831",
+            "source": "n2",
+            "target": "n43"
+        },
+        {
+            "num": 675,
+            "weight": 227.1885921395388,
+            "id": "e15674",
+            "source": "n2",
+            "target": "n150"
+        },
+        {
+            "num": 468,
+            "weight": 109.96969108487313,
+            "id": "e17870",
+            "source": "n2",
+            "target": "n212"
+        },
+        {
+            "num": 6,
+            "weight": 39.66483044934866,
+            "id": "e522",
+            "source": "n2",
+            "target": "n213"
+        },
+        {
+            "num": 122,
+            "weight": 18.221957944458616,
+            "id": "e17184",
+            "source": "n2",
+            "target": "n188"
+        },
+        {
+            "num": 667535,
+            "weight": 155714.7213086432,
+            "id": "e1042",
+            "source": "n5",
+            "target": "n6"
+        },
+        {
+            "num": 6094,
+            "weight": 2058.9691495446023,
+            "id": "e3038",
+            "source": "n5",
+            "target": "n17"
+        },
+        {
+            "num": 1962,
+            "weight": 790.8786541260608,
+            "id": "e9975",
+            "source": "n5",
+            "target": "n70"
+        },
+        {
+            "num": 104,
+            "weight": 231.14597137105707,
+            "id": "e17936",
+            "source": "n5",
+            "target": "n214"
+        },
+        {
+            "num": 408,
+            "weight": 109.10600898912783,
+            "id": "e6571",
+            "source": "n5",
+            "target": "n41"
+        },
+        {
+            "num": 503,
+            "weight": 105.17557811143901,
+            "id": "e15966",
+            "source": "n5",
+            "target": "n156"
+        },
+        {
+            "num": 160,
+            "weight": 88.0878936791952,
+            "id": "e17046",
+            "source": "n5",
+            "target": "n182"
+        },
+        {
+            "num": 428,
+            "weight": 69.5284710022723,
+            "id": "e18062",
+            "source": "n5",
+            "target": "n219"
+        },
+        {
+            "num": 87,
+            "weight": 67.53492600212401,
+            "id": "e13568",
+            "source": "n5",
+            "target": "n115"
+        },
+        {
+            "num": 227,
+            "weight": 64.04269291947841,
+            "id": "e17453",
+            "source": "n5",
+            "target": "n196"
+        },
+        {
+            "num": 67,
+            "weight": 58.638645211617074,
+            "id": "e18017",
+            "source": "n5",
+            "target": "n217"
+        },
+        {
+            "num": 20,
+            "weight": 34.635377562163846,
+            "id": "e12802",
+            "source": "n5",
+            "target": "n104"
+        },
+        {
+            "num": 97,
+            "weight": 20.692161815206354,
+            "id": "e1029",
+            "source": "n5",
+            "target": "n227"
+        },
+        {
+            "num": 31,
+            "weight": 17.305494431481595,
+            "id": "e18154",
+            "source": "n5",
+            "target": "n226"
+        },
+        {
+            "num": 3,
+            "weight": 2.7030069234899203,
+            "id": "e1006",
+            "source": "n5",
+            "target": "n205"
+        },
+        {
+            "num": 1199051,
+            "weight": 338861.69443150033,
+            "id": "e1519",
+            "source": "n6",
+            "target": "n9"
+        },
+        {
+            "num": 654934,
+            "weight": 198231.10061382875,
+            "id": "e2620",
+            "source": "n6",
+            "target": "n15"
+        },
+        {
+            "num": 191389,
+            "weight": 53108.07117932482,
+            "id": "e4541",
+            "source": "n6",
+            "target": "n28"
+        },
+        {
+            "num": 466925,
+            "weight": 26271.7123213173,
+            "id": "e3821",
+            "source": "n6",
+            "target": "n24"
+        },
+        {
+            "num": 91538,
+            "weight": 25092.702732165315,
+            "id": "e8188",
+            "source": "n6",
+            "target": "n55"
+        },
+        {
+            "num": 70609,
+            "weight": 22401.97134587648,
+            "id": "e5565",
+            "source": "n6",
+            "target": "n34"
+        },
+        {
+            "num": 59480,
+            "weight": 22198.817339813402,
+            "id": "e6622",
+            "source": "n6",
+            "target": "n42"
+        },
+        {
+            "num": 68569,
+            "weight": 16797.854998193456,
+            "id": "e5360",
+            "source": "n6",
+            "target": "n33"
+        },
+        {
+            "num": 29160,
+            "weight": 9582.789924029315,
+            "id": "e5929",
+            "source": "n6",
+            "target": "n36"
+        },
+        {
+            "num": 13292,
+            "weight": 3239.617169337617,
+            "id": "e10209",
+            "source": "n6",
+            "target": "n72"
+        },
+        {
+            "num": 11947,
+            "weight": 2850.307789555812,
+            "id": "e9531",
+            "source": "n6",
+            "target": "n67"
+        },
+        {
+            "num": 6730,
+            "weight": 2798.0128861491758,
+            "id": "e9683",
+            "source": "n6",
+            "target": "n68"
+        },
+        {
+            "num": 6477,
+            "weight": 1980.0558512508187,
+            "id": "e12067",
+            "source": "n6",
+            "target": "n93"
+        },
+        {
+            "num": 9910,
+            "weight": 1761.0129499250017,
+            "id": "e3387",
+            "source": "n6",
+            "target": "n19"
+        },
+        {
+            "num": 5898,
+            "weight": 1343.9942818962265,
+            "id": "e1252",
+            "source": "n6",
+            "target": "n224"
+        },
+        {
+            "num": 3949,
+            "weight": 1000.4533262274856,
+            "id": "e11524",
+            "source": "n6",
+            "target": "n86"
+        },
+        {
+            "num": 2608,
+            "weight": 788.6931373413868,
+            "id": "e13288",
+            "source": "n6",
+            "target": "n112"
+        },
+        {
+            "num": 2799,
+            "weight": 778.6766957751647,
+            "id": "e10686",
+            "source": "n6",
+            "target": "n76"
+        },
+        {
+            "num": 2485,
+            "weight": 770.5959544924789,
+            "id": "e4877",
+            "source": "n6",
+            "target": "n30"
+        },
+        {
+            "num": 3565,
+            "weight": 635.2909847799334,
+            "id": "e4753",
+            "source": "n6",
+            "target": "n29"
+        },
+        {
+            "num": 2723,
+            "weight": 564.4732893191134,
+            "id": "e10563",
+            "source": "n6",
+            "target": "n75"
+        },
+        {
+            "num": 2502,
+            "weight": 548.6168817378281,
+            "id": "e4417",
+            "source": "n6",
+            "target": "n27"
+        },
+        {
+            "num": 1014,
+            "weight": 538.0971236638615,
+            "id": "e14430",
+            "source": "n6",
+            "target": "n126"
+        },
+        {
+            "num": 2290,
+            "weight": 500.137657929339,
+            "id": "e8633",
+            "source": "n6",
+            "target": "n59"
+        },
+        {
+            "num": 1455,
+            "weight": 499.1581002596177,
+            "id": "e14322",
+            "source": "n6",
+            "target": "n125"
+        },
+        {
+            "num": 671,
+            "weight": 468.7343317597582,
+            "id": "e9442",
+            "source": "n6",
+            "target": "n66"
+        },
+        {
+            "num": 8738,
+            "weight": 466.8796415128314,
+            "id": "e13672",
+            "source": "n6",
+            "target": "n117"
+        },
+        {
+            "num": 2160,
+            "weight": 425.87003136660843,
+            "id": "e15546",
+            "source": "n6",
+            "target": "n149"
+        },
+        {
+            "num": 1321,
+            "weight": 411.5310166533532,
+            "id": "e9123",
+            "source": "n6",
+            "target": "n63"
+        },
+        {
+            "num": 1694,
+            "weight": 379.6929316240457,
+            "id": "e14952",
+            "source": "n6",
+            "target": "n136"
+        },
+        {
+            "num": 888,
+            "weight": 359.4314505415523,
+            "id": "e11152",
+            "source": "n6",
+            "target": "n81"
+        },
+        {
+            "num": 868,
+            "weight": 312.9060688008938,
+            "id": "e11942",
+            "source": "n6",
+            "target": "n91"
+        },
+        {
+            "num": 722,
+            "weight": 302.9640045489154,
+            "id": "e14078",
+            "source": "n6",
+            "target": "n122"
+        },
+        {
+            "num": 1036,
+            "weight": 288.2125671271422,
+            "id": "e17665",
+            "source": "n6",
+            "target": "n202"
+        },
+        {
+            "num": 720,
+            "weight": 262.56442743789,
+            "id": "e14548",
+            "source": "n6",
+            "target": "n128"
+        },
+        {
+            "num": 778,
+            "weight": 237.3061972974327,
+            "id": "e13824",
+            "source": "n6",
+            "target": "n118"
+        },
+        {
+            "num": 230,
+            "weight": 228.87188566963317,
+            "id": "e14510",
+            "source": "n6",
+            "target": "n127"
+        },
+        {
+            "num": 835,
+            "weight": 185.68613177113713,
+            "id": "e17078",
+            "source": "n6",
+            "target": "n183"
+        },
+        {
+            "num": 822,
+            "weight": 174.88737695355888,
+            "id": "e16046",
+            "source": "n6",
+            "target": "n158"
+        },
+        {
+            "num": 339,
+            "weight": 171.80499647321457,
+            "id": "e12506",
+            "source": "n6",
+            "target": "n98"
+        },
+        {
+            "num": 786,
+            "weight": 140.98913628557554,
+            "id": "e14004",
+            "source": "n6",
+            "target": "n121"
+        },
+        {
+            "num": 1198,
+            "weight": 135.0308581101346,
+            "id": "e14699",
+            "source": "n6",
+            "target": "n131"
+        },
+        {
+            "num": 2427,
+            "weight": 109.03458593598423,
+            "id": "e13128",
+            "source": "n6",
+            "target": "n110"
+        },
+        {
+            "num": 245,
+            "weight": 102.91099673375673,
+            "id": "e16595",
+            "source": "n6",
+            "target": "n173"
+        },
+        {
+            "num": 538,
+            "weight": 81.5062308877532,
+            "id": "e16769",
+            "source": "n6",
+            "target": "n177"
+        },
+        {
+            "num": 290,
+            "weight": 67.08954470138394,
+            "id": "e16171",
+            "source": "n6",
+            "target": "n161"
+        },
+        {
+            "num": 132,
+            "weight": 64.05573279980884,
+            "id": "e12766",
+            "source": "n6",
+            "target": "n103"
+        },
+        {
+            "num": 700,
+            "weight": 62.58538434911183,
+            "id": "e11661",
+            "source": "n6",
+            "target": "n87"
+        },
+        {
+            "num": 355,
+            "weight": 47.664062072111236,
+            "id": "e14900",
+            "source": "n6",
+            "target": "n135"
+        },
+        {
+            "num": 299,
+            "weight": 44.123159022859504,
+            "id": "e16515",
+            "source": "n6",
+            "target": "n171"
+        },
+        {
+            "num": 438,
+            "weight": 37.901120948537695,
+            "id": "e14142",
+            "source": "n6",
+            "target": "n123"
+        },
+        {
+            "num": 924,
+            "weight": 36.923582611065136,
+            "id": "e12859",
+            "source": "n6",
+            "target": "n106"
+        },
+        {
+            "num": 523,
+            "weight": 30.567832279014578,
+            "id": "e15147",
+            "source": "n6",
+            "target": "n140"
+        },
+        {
+            "num": 123,
+            "weight": 30.226924891202188,
+            "id": "e15441",
+            "source": "n6",
+            "target": "n147"
+        },
+        {
+            "num": 65,
+            "weight": 25.596511804671813,
+            "id": "e16239",
+            "source": "n6",
+            "target": "n162"
+        },
+        {
+            "num": 116,
+            "weight": 23.79795613390111,
+            "id": "e16897",
+            "source": "n6",
+            "target": "n179"
+        },
+        {
+            "num": 732,
+            "weight": 23.103163440473853,
+            "id": "e11393",
+            "source": "n6",
+            "target": "n84"
+        },
+        {
+            "num": 138,
+            "weight": 19.64109706845364,
+            "id": "e12950",
+            "source": "n6",
+            "target": "n107"
+        },
+        {
+            "num": 91,
+            "weight": 18.446813631733292,
+            "id": "e15408",
+            "source": "n6",
+            "target": "n145"
+        },
+        {
+            "num": 6,
+            "weight": 7.419571480506863,
+            "id": "e16358",
+            "source": "n6",
+            "target": "n165"
+        },
+        {
+            "num": 102,
+            "weight": 5.094159588768828,
+            "id": "e17747",
+            "source": "n6",
+            "target": "n203"
+        },
+        {
+            "num": 192,
+            "weight": 4.380012817631582,
+            "id": "e17972",
+            "source": "n6",
+            "target": "n216"
+        },
+        {
+            "num": 15,
+            "weight": 3.832362790828878,
+            "id": "e16750",
+            "source": "n6",
+            "target": "n176"
+        },
+        {
+            "num": 63,
+            "weight": 3.680410407114445,
+            "id": "e16122",
+            "source": "n6",
+            "target": "n159"
+        },
+        {
+            "num": 5,
+            "weight": 0.23766460529012073,
+            "id": "e17161",
+            "source": "n6",
+            "target": "n186"
+        },
+        {
+            "num": 15,
+            "weight": 63.18739356488814,
+            "id": "e1438",
+            "source": "n7",
+            "target": "n184"
+        },
+        {
+            "num": 6,
+            "weight": 50.595304062157126,
+            "id": "e14633",
+            "source": "n7",
+            "target": "n129"
+        },
+        {
+            "num": 27,
+            "weight": 44.042974031195364,
+            "id": "e1417",
+            "source": "n7",
+            "target": "n218"
+        },
+        {
+            "num": 225164,
+            "weight": 44995.271046620255,
+            "id": "e1870",
+            "source": "n9",
+            "target": "n11"
+        },
+        {
+            "num": 15120,
+            "weight": 4717.945758312424,
+            "id": "e7786",
+            "source": "n9",
+            "target": "n52"
+        },
+        {
+            "num": 5842,
+            "weight": 1940.9253258245838,
+            "id": "e2480",
+            "source": "n9",
+            "target": "n14"
+        },
+        {
+            "num": 3442,
+            "weight": 1451.1493359996632,
+            "id": "e7359",
+            "source": "n9",
+            "target": "n47"
+        },
+        {
+            "num": 10001,
+            "weight": 593.226813891243,
+            "id": "e7693",
+            "source": "n9",
+            "target": "n51"
+        },
+        {
+            "num": 776,
+            "weight": 503.8803823426773,
+            "id": "e16269",
+            "source": "n9",
+            "target": "n163"
+        },
+        {
+            "num": 1562,
+            "weight": 404.08954967692114,
+            "id": "e16673",
+            "source": "n9",
+            "target": "n175"
+        },
+        {
+            "num": 370,
+            "weight": 309.9769220632463,
+            "id": "e17497",
+            "source": "n9",
+            "target": "n197"
+        },
+        {
+            "num": 350,
+            "weight": 190.8166109126496,
+            "id": "e12020",
+            "source": "n9",
+            "target": "n92"
+        },
+        {
+            "num": 1008,
+            "weight": 149.4570207384192,
+            "id": "e10886",
+            "source": "n9",
+            "target": "n78"
+        },
+        {
+            "num": 380,
+            "weight": 127.35143190480923,
+            "id": "e10487",
+            "source": "n9",
+            "target": "n74"
+        },
+        {
+            "num": 161,
+            "weight": 107.6868711585,
+            "id": "e17643",
+            "source": "n9",
+            "target": "n201"
+        },
+        {
+            "num": 59,
+            "weight": 32.1872197621406,
+            "id": "e16159",
+            "source": "n9",
+            "target": "n160"
+        },
+        {
+            "num": 106,
+            "weight": 31.442623340438722,
+            "id": "e12588",
+            "source": "n9",
+            "target": "n100"
+        },
+        {
+            "num": 69,
+            "weight": 15.36283781848336,
+            "id": "e17539",
+            "source": "n9",
+            "target": "n198"
+        },
+        {
+            "num": 64,
+            "weight": 8.815530096385821,
+            "id": "e17833",
+            "source": "n9",
+            "target": "n211"
+        },
+        {
+            "num": 4,
+            "weight": 0.2969972020292272,
+            "id": "e17325",
+            "source": "n9",
+            "target": "n192"
+        },
+        {
+            "num": 8,
+            "weight": 0.26765264040556935,
+            "id": "e17770",
+            "source": "n9",
+            "target": "n206"
+        },
+        {
+            "num": 3,
+            "weight": 0.08010601937912758,
+            "id": "e17175",
+            "source": "n9",
+            "target": "n187"
+        },
+        {
+            "num": 1,
+            "weight": 0.028143524403082217,
+            "id": "e17640",
+            "source": "n9",
+            "target": "n200"
+        },
+        {
+            "num": 110807,
+            "weight": 30151.200083920172,
+            "id": "e3524",
+            "source": "n11",
+            "target": "n20"
+        },
+        {
+            "num": 17387,
+            "weight": 3463.3080192294674,
+            "id": "e11475",
+            "source": "n11",
+            "target": "n85"
+        },
+        {
+            "num": 8187,
+            "weight": 1159.6457501194666,
+            "id": "e8395",
+            "source": "n11",
+            "target": "n56"
+        },
+        {
+            "num": 1344,
+            "weight": 579.4392079694616,
+            "id": "e15800",
+            "source": "n11",
+            "target": "n152"
+        },
+        {
+            "num": 865,
+            "weight": 79.49175781551166,
+            "id": "e17953",
+            "source": "n11",
+            "target": "n215"
+        },
+        {
+            "num": 799,
+            "weight": 59.91247780172028,
+            "id": "e1943",
+            "source": "n11",
+            "target": "n167"
+        },
+        {
+            "num": 304,
+            "weight": 15.899810398761817,
+            "id": "e16443",
+            "source": "n11",
+            "target": "n169"
+        },
+        {
+            "num": 521,
+            "weight": 47.815680438356075,
+            "id": "e15352",
+            "source": "n12",
+            "target": "n143"
+        },
+        {
+            "num": 104,
+            "weight": 18.668098475353077,
+            "id": "e17250",
+            "source": "n13",
+            "target": "n190"
+        },
+        {
+            "num": 117,
+            "weight": 3.888615798577863,
+            "id": "e15436",
+            "source": "n13",
+            "target": "n146"
+        },
+        {
+            "num": 85,
+            "weight": 1.2618485687275378,
+            "id": "e2466",
+            "source": "n13",
+            "target": "n223"
+        },
+        {
+            "num": 246,
+            "weight": 524.2330210136952,
+            "id": "e17401",
+            "source": "n15",
+            "target": "n195"
+        },
+        {
+            "num": 232,
+            "weight": 161.38876276775798,
+            "id": "e17570",
+            "source": "n15",
+            "target": "n199"
+        },
+        {
+            "num": 100,
+            "weight": 20.048958743064414,
+            "id": "e16340",
+            "source": "n15",
+            "target": "n164"
+        },
+        {
+            "num": 20,
+            "weight": 1.7926561071688278,
+            "id": "e12565",
+            "source": "n15",
+            "target": "n99"
+        },
+        {
+            "num": 4,
+            "weight": 0.17474868310944922,
+            "id": "e14783",
+            "source": "n15",
+            "target": "n132"
+        },
+        {
+            "num": 6,
+            "weight": 97.84825412609422,
+            "id": "e15111",
+            "source": "n17",
+            "target": "n139"
+        },
+        {
+            "num": 417,
+            "weight": 525.8882050709329,
+            "id": "e12209",
+            "source": "n18",
+            "target": "n94"
+        },
+        {
+            "num": 21,
+            "weight": 222.91406360126047,
+            "id": "e15384",
+            "source": "n18",
+            "target": "n144"
+        },
+        {
+            "num": 675,
+            "weight": 39.0353019093633,
+            "id": "e3351",
+            "source": "n18",
+            "target": "n209"
+        },
+        {
+            "num": 95,
+            "weight": 32.519977072575074,
+            "id": "e17204",
+            "source": "n18",
+            "target": "n189"
+        },
+        {
+            "num": 61,
+            "weight": 25.13676706929374,
+            "id": "e3366",
+            "source": "n18",
+            "target": "n220"
+        },
+        {
+            "num": 3269,
+            "weight": 121.21518934075245,
+            "id": "e5849",
+            "source": "n22",
+            "target": "n35"
+        },
+        {
+            "num": 2015,
+            "weight": 98.145494411071,
+            "id": "e8934",
+            "source": "n23",
+            "target": "n61"
+        },
+        {
+            "num": 1158,
+            "weight": 36.613391342800014,
+            "id": "e17263",
+            "source": "n24",
+            "target": "n191"
+        },
+        {
+            "num": 27,
+            "weight": 14.186584844750946,
+            "id": "e4408",
+            "source": "n26",
+            "target": "n225"
+        },
+        {
+            "num": 18,
+            "weight": 10.642027041762343,
+            "id": "e4406",
+            "source": "n26",
+            "target": "n155"
+        },
+        {
+            "num": 32,
+            "weight": 5.872761486564293,
+            "id": "e18133",
+            "source": "n26",
+            "target": "n221"
+        },
+        {
+            "num": 4244,
+            "weight": 2354.6273831636677,
+            "id": "e10082",
+            "source": "n28",
+            "target": "n71"
+        },
+        {
+            "num": 3676,
+            "weight": 1403.2898468016667,
+            "id": "e14209",
+            "source": "n28",
+            "target": "n124"
+        },
+        {
+            "num": 546,
+            "weight": 133.05567804645997,
+            "id": "e13251",
+            "source": "n28",
+            "target": "n111"
+        },
+        {
+            "num": 342,
+            "weight": 61.67683099497115,
+            "id": "e16570",
+            "source": "n28",
+            "target": "n172"
+        },
+        {
+            "num": 59,
+            "weight": 32.11317491349226,
+            "id": "e17151",
+            "source": "n28",
+            "target": "n185"
+        },
+        {
+            "num": 396939,
+            "weight": 10672.408124749734,
+            "id": "e9260",
+            "source": "n31",
+            "target": "n65"
+        },
+        {
+            "num": 183,
+            "weight": 224.10671917859847,
+            "id": "e16935",
+            "source": "n33",
+            "target": "n180"
+        },
+        {
+            "num": 3122,
+            "weight": 95.10739893433346,
+            "id": "e13061",
+            "source": "n35",
+            "target": "n109"
+        },
+        {
+            "num": 985,
+            "weight": 27.865961936954577,
+            "id": "e8142",
+            "source": "n35",
+            "target": "n54"
+        },
+        {
+            "num": 307431,
+            "weight": 6121.245296754781,
+            "id": "e9258",
+            "source": "n39",
+            "target": "n65"
+        },
+        {
+            "num": 28,
+            "weight": 86.6561012354167,
+            "id": "e13962",
+            "source": "n42",
+            "target": "n120"
+        },
+        {
+            "num": 2,
+            "weight": 1.5395955007675748,
+            "id": "e17780",
+            "source": "n42",
+            "target": "n208"
+        },
+        {
+            "num": 18566,
+            "weight": 468.2107552856843,
+            "id": "e9274",
+            "source": "n49",
+            "target": "n65"
+        },
+        {
+            "num": 346,
+            "weight": 25.086937850152253,
+            "id": "e15763",
+            "source": "n49",
+            "target": "n151"
+        },
+        {
+            "num": 751,
+            "weight": 337.399280477617,
+            "id": "e8028",
+            "source": "n53",
+            "target": "n137"
+        },
+        {
+            "num": 642,
+            "weight": 34.896372082137596,
+            "id": "e16420",
+            "source": "n53",
+            "target": "n168"
+        },
+        {
+            "num": 1,
+            "weight": 1.8156505315773332,
+            "id": "e17777",
+            "source": "n55",
+            "target": "n207"
+        },
+        {
+            "num": 53936,
+            "weight": 1803.0489934122677,
+            "id": "e9268",
+            "source": "n60",
+            "target": "n65"
+        },
+        {
+            "num": 816442,
+            "weight": 20385.570076296568,
+            "id": "e9266",
+            "source": "n61",
+            "target": "n65"
+        },
+        {
+            "num": 147933,
+            "weight": 1406.1814641433596,
+            "id": "e11756",
+            "source": "n61",
+            "target": "n89"
+        },
+        {
+            "num": 1493,
+            "weight": 13.156462523147011,
+            "id": "e17362",
+            "source": "n61",
+            "target": "n194"
+        },
+        {
+            "num": 224866,
+            "weight": 6048.006821027545,
+            "id": "e9259",
+            "source": "n62",
+            "target": "n65"
+        },
+        {
+            "num": 4452,
+            "weight": 83.93275022232221,
+            "id": "e11865",
+            "source": "n65",
+            "target": "n90"
+        },
+        {
+            "num": 1772,
+            "weight": 24.93270885271639,
+            "id": "e11709",
+            "source": "n65",
+            "target": "n88"
+        },
+        {
+            "num": 183,
+            "weight": 174.1888748285237,
+            "id": "e10346",
+            "source": "n72",
+            "target": "n116"
+        },
+        {
+            "num": 40,
+            "weight": 76.65580151574795,
+            "id": "e12060",
+            "source": "n92",
+            "target": "n204"
+        }
+    ]
+}
