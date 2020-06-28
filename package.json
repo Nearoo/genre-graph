@@ -19,6 +19,7 @@
     "pug": "^3.0.0",
     "query-string": "^6.13.1",
     "querystring": "^0.2.0",
+    "raw-loader": "^4.0.1",
     "request": "^2.88.2",
     "stylus": "^0.54.7",
     "three": "^0.117.1"
