@@ -1,5 +1,8 @@
 import * as $ from 'jquery'
 import * as querystring from 'query-string'
+import * as EventEmitter from 'events'
+
+
 
 # Create getter / setter support for coffee-script
 Function::getter = (prop, get) ->
@@ -7,13 +10,27 @@ Function::getter = (prop, get) ->
 Function::setter = (prop, set) ->
   Object.defineProperty @prototype, prop, {set, configurable: yes}
 
-class Spotify
-    constructor: (location_hash) ->
-        { @access_token, @refresh_token } = querystring.parse location_hash
+
+class SpotifyAPI extends EventEmitter
+    constructor: (@access_token, @refresh_token) ->
+        super()
         
         @apiBaseUrl = 'https://api.spotify.com/v1/'
         @authHeaders = 
             Authorization: 'Bearer ' + @access_token
+        
+        window.onSpotifyWebPlaybackSDKReady = =>  
+          @player = new Spotify.Player {
+            name: 'Genre Graph 🎷'
+            getOAuthToken: (cb) => cb(@access_token)
+          }
+          @player.on 'ready', ({device_id}) =>
+            @player_id = device_id
+            console.log "Spotify Webplayer initialized with id" + @player_id
+            @emit 'player-ready'
+          
+          @player.connect()
+        
     
     @getter 'logged_in', ->
         @access_token? and @refresh_token?
@@ -22,12 +39,31 @@ class Spotify
         relativeURL.slice(1) if relativeURL.startsWith('/')
         $.ajax {
             dataType: 'json'
-            url: @apiBaseUrl + relativeURL
+            url: @apiBaseUrl + relativeURL + '?' + querystring.stringify options
             headers: @authHeaders
-            options: options
             }
             .done done
             .fail fail
             .always always
+    
+    getArtists: (artistIds, done= ->, fail= ->) =>
+      @query 'artists', {ids: artistIds}, done, fail
+    
 
-export { Spotify }
+    genreRecommendations: (genre, done= ->, fail= ->) =>
+      @query 'recommendations', {seed_genres: genre}, done, fail
+    
+
+    playURI: (uri) =>
+      console.log "Playing with player " + @player_id
+      $.ajax {
+        method: 'PUT',
+        contentType: 'application/json'
+        headers: @authHeaders,
+        body: JSON.stringify { uris: ["spotify:track:462HFjkL2Wnm9zYy8df06Q"] }
+        url: 'https://api.spotify.com/v1/me/player/play?' + querystring.stringify {device_id: @player_id}
+      }
+        .fail (error) => console.log error.responseText
+
+
+export { SpotifyAPI }

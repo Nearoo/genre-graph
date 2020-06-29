@@ -24,7 +24,7 @@ router.get '/login', (req, res, next) =>
     state = genRandomStr 16
     res.cookie state_cookie_key, state
     
-    scope = 'user-read-private user-read-email'
+    scope = 'streaming user-read-private user-read-email user-modify-playback-state'
     res.redirect 'https://accounts.spotify.com/authorize?' +
         querystring.stringify {
             response_type: 'code',
