@@ -47,7 +47,11 @@ class Page extends EventEmitter
         
         @on 'prev-song', =>
             @pplayer.prevTrack()
-    
+        
+        $( document ).on 'click', '.artist', (event) =>
+            target = $ event.currentTarget
+            @playArtist target.attr 'artist-id'
+        
     syncPlayButtonWithPlayer: () =>
         @player.getCurrentState().then (state) =>
             if state.paused
@@ -55,8 +59,13 @@ class Page extends EventEmitter
             else
                 @setPlayButtonState 'play'
     
-    playSong: (uri) =>
-        
+    playURI: (uri) =>
+        console.log "Requested playback of URI" + uri
+        # Currently not functional
+        #@spotify.playURI uri
+    
+    playArtist: (artistId) =>
+        console.log "Playing artist " + artistId
     
     setPlayButtonState: (state) =>
         switch state
@@ -79,7 +88,7 @@ class Page extends EventEmitter
         @gmap.artistContainer.append @templates.artist {
             imgSrc: imgSrc
             name: name
-            id: artistId
+            artist_id: artistId
         }
     
     addArtistsById: (artistIds) =>

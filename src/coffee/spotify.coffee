@@ -3,6 +3,8 @@ import * as querystring from 'query-string'
 import * as EventEmitter from 'events'
 
 
+window.onSpotifyWebPlaybackSDKReady = =>
+  console.log "Spotify Web Player SDK ready."
 
 # Create getter / setter support for coffee-script
 Function::getter = (prop, get) ->
@@ -19,17 +21,17 @@ class SpotifyAPI extends EventEmitter
         @authHeaders = 
             Authorization: 'Bearer ' + @access_token
         
-        window.onSpotifyWebPlaybackSDKReady = =>  
-          @player = new Spotify.Player {
-            name: 'Genre Graph 🎷'
-            getOAuthToken: (cb) => cb(@access_token)
-          }
-          @player.on 'ready', ({device_id}) =>
-            @player_id = device_id
-            console.log "Spotify Webplayer initialized with id" + @player_id
-            @emit 'player-ready'
-          
-          @player.connect()
+        # Todo: Wait for onSpotifyWebPlaybackSDKReady
+        @player = new Spotify.Player {
+          name: 'Genre Graph 🎷'
+          getOAuthToken: (cb) => cb(@access_token)
+        }
+        @player.on 'ready', ({device_id}) =>
+          @player_id = device_id
+          console.log "Spotify Webplayer initialized."
+          @emit 'player-ready'
+        
+        @player.connect()
         
     
     @getter 'logged_in', ->
