@@ -3,8 +3,29 @@ import * as querystring from 'query-string'
 import * as EventEmitter from 'events'
 
 
-window.onSpotifyWebPlaybackSDKReady = =>
-  console.log "Spotify Web Player SDK ready."
+# Circumvent spotify's awkward way to initialize its sdk, allow for later initialiization of player
+class SpotifyInitDelayed extends EventEmitter
+  constructor: ->
+    super()
+    @inited = false
+    @callbacks = []
+    window.onSpotifyWebPlaybackSDKReady = =>
+      console.log "Spotify Web Playback SDK initialized."
+      @inited = true
+      @callAll()
+
+  
+  addCallback: (callback) =>
+    @callbacks.push callback
+    @callAll()
+  
+  callAll: =>
+    if @inited
+      while @callbacks.length > 0
+        cb = @callbacks.pop()
+        cb?()
+  
+spotifyInitDelayed = new SpotifyInitDelayed
 
 # Create getter / setter support for coffee-script
 Function::getter = (prop, get) ->
@@ -21,17 +42,20 @@ class SpotifyAPI extends EventEmitter
         @authHeaders = 
             Authorization: 'Bearer ' + @access_token
         
-        # Todo: Wait for onSpotifyWebPlaybackSDKReady
-        @player = new Spotify.Player {
-          name: 'Genre Graph 🎷'
-          getOAuthToken: (cb) => cb(@access_token)
-        }
-        @player.on 'ready', ({device_id}) =>
-          @player_id = device_id
-          console.log "Spotify Webplayer initialized."
-          @emit 'player-ready'
-        
-        @player.connect()
+        initPlayer = =>
+          console.log 'Spotify webplayer initialized.'
+          @player = new Spotify.Player {
+            name: 'Genre Graph 🎷'
+            getOAuthToken: (cb) => cb(@access_token)
+          }
+          @player.on 'ready', ({device_id}) =>
+            @player_id = device_id
+            console.log "Spotify Webplayer initialized."
+            @emit 'player-ready'
+          
+          @player.connect()
+
+        spotifyInitDelayed.addCallback initPlayer
         
     
     @getter 'logged_in', ->

@@ -15,18 +15,25 @@ logged_in = =>
 if logged_in()
     console.log 'Logged in'
     page = new Page access_token, refresh_token
-    page.showGenre 'pop'
-    ### To-Do: smh not workng...
-    page.spotify.on 'player-ready', () =>
-        page.spotify.playURI 'spotify:track:6rqhFgbbKwnb9MLmUQDhG6'
-    ###
 
 
 # Build graph, make resize automatically
-dom = document.getElementById 'graph-container'
+dom = $ '#graph-container'
 canv = document.getElementById 'graph'
 tree = new Tree dom, canv
 
-window.addEventListener 'resize', () =>
-    gc = $('#graph-container')
-    tree.setRenderSize gc.width(), gc.height()
+tree.animate()
+tree.on 'node-clicked', (node, event) =>
+    if logged_in()
+        genre_normed = node.genre.toLowerCase().replace(' ', '-')
+        console.log "Showing " + genre_normed
+        page.showGenre genre_normed
+    else
+        console.log "Would show " + node.genre
+
+exports =
+    page: page
+    tree: tree
+    graph: tree.graph
+    spotify: page?.spotify
+window.entry = exports

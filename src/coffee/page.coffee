@@ -16,9 +16,9 @@ class Page extends EventEmitter
             prevButton: $ '#prev-button'
             nextButton: $ '#next-button'
 
-            songs: $ '.song'
-            artists: $ '.artist'
-            playlists: $ '.playlist'
+            songs: $ '#songs'
+            artists: $ '#artists'
+            playlists: $ '#playlists'
 
             songContainer: $ '#songs'
             playlistContainer: $ '#playlists'
@@ -73,9 +73,9 @@ class Page extends EventEmitter
             when 'pause' then @gmap.playButton.html pug.render 'i.ion.ion-pause'
 
     clearNavbar: () =>
-        @gmap.artists.remove()
-        @gmap.playlists.remove()
-        @gmap.songs.remove()
+        @gmap.artists.html ''
+        @gmap.playlists.html ''
+        @gmap.songs.html ''
     
     addSongElement: (imgSrc, title, artist) =>
         @gmap.songContainer.append @templates.song {
@@ -107,7 +107,7 @@ class Page extends EventEmitter
         }
     
     showGenre: (genre) =>
-        # Requests more info by spotify, then adds them
+        @clearNavbar()
         @spotify.genreRecommendations genre,
         (data) =>
             for track in data.tracks
