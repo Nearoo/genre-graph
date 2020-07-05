@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index/index');
 });
 
+router.get('/land', function (req, res, next) {
+  res.render('log-in/login');
+});
+
+
 module.exports = router;

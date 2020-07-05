@@ -1,0 +1,53 @@
+
+/* line 297 : /mnt/c/Users/silas/Documents/JavaScript/genre-graph/src/style/landing.styl */
+
+/* line 1 : /mnt/c/Users/silas/Documents/JavaScript/genre-graph/node_modules/stylus/lib/functions/index.styl */
+
+/* line 13 : /mnt/c/Users/silas/Documents/JavaScript/genre-graph/node_modules/stylus/lib/functions/index.styl */
+
+/* line 3 : /mnt/c/Users/silas/Documents/JavaScript/genre-graph/src/style/vars.styl */
+
+/* line 4 : /mnt/c/Users/silas/Documents/JavaScript/genre-graph/src/style/landing.styl */
+#main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+/* line 10 : /mnt/c/Users/silas/Documents/JavaScript/genre-graph/src/style/landing.styl */
+h1 {
+  font-size: 80pt;
+}
+
+/* line 13 : /mnt/c/Users/silas/Documents/JavaScript/genre-graph/src/style/landing.styl */
+.button {
+  font-size: 20pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #2fb955;
+  border: none;
+  color: #fff;
+  padding: 20px 32px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 72px;
+  box-shadow: 0px 0px 3px #fff;
+  transition: 0.1s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 30 : /mnt/c/Users/silas/Documents/JavaScript/genre-graph/src/style/landing.styl */
+.button:hover {
+  box-shadow: 0px 3px 6px #fff;
+  transform: translateY(-6px);
+}
+
+/* line 36 : /mnt/c/Users/silas/Documents/JavaScript/genre-graph/src/style/landing.styl */
+.button:active {
+  transform: translateY(0px);
+  box-shadow: 0px 0px 3px #fff;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZS9sYW5kaW5nLnN0eWwiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR0E7RUFDSSxTQUFTLEtBQVQ7RUFDQSxpQkFBaUIsT0FBakI7RUFDQSxlQUFlLE9BQWY7RUFDQSxhQUFhLE9BQWI7O0FBRUo7RUFDSSxXQUFXLEtBQVg7O0FBRUo7RUFDSSxXQUFXLEtBQVg7RUFDQSxhQUFhLEtBQWI7RUFDQSxnQkFBZ0IsVUFBaEI7RUFDQSxnQkFBZ0IsSUFBaEI7RUFDQSxrQkFBa0IsUUFBbEI7RUFDQSxRQUFRLEtBQVI7RUFDQSxPQUFPLEtBQVA7RUFDQSxTQUFTLFVBQVQ7RUFDQSxZQUFZLE9BQVo7RUFDQSxTQUFTLGFBQVQ7RUFDQSxlQUFlLEtBQWY7RUFDQSxZQUFZLGlCQUFaO0VBQ0EsWUFBWSxLQUFaO0VBQ0EsUUFBUSxRQUFSO0VBQ0EsaUJBQWlCLEtBQWpCOztBQUVBO0VBRUksWUFBWSxpQkFBWjtFQUNBLFdBQVcsaUJBQVg7O0FBR0o7RUFDSSxXQUFXLGdCQUFYO0VBQ0EsWUFBWSxpQkFBWiIsImZpbGUiOiJsYW5kaW5nLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkByZXF1aXJlICd2YXJzJ1xuXG5cbiNtYWluXG4gICAgZGlzcGxheTogZmxleFxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyXG4gICAgYWxpZ24tY29udGVudDogY2VudGVyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlclxuXG5oMVxuICAgIGZvbnQtc2l6ZTogODBwdFxuXG4uYnV0dG9uXG4gICAgZm9udC1zaXplOiAyMHB0XG4gICAgZm9udC13ZWlnaHQ6IGJvbGRcbiAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlXG4gICAgbGV0dGVyLXNwYWNpbmc6IDJweFxuICAgIGJhY2tncm91bmQtY29sb3I6IGdyZWVuXG4gICAgYm9yZGVyOiBub25lXG4gICAgY29sb3I6IHdoaXRlXG4gICAgcGFkZGluZzogMjBweCAzMnB4XG4gICAgdGV4dC1hbGlnbjogY2VudGVyXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrXG4gICAgYm9yZGVyLXJhZGl1czogNzJweFxuICAgIGJveC1zaGFkb3c6IDBweCAwcHggM3B4ICNmZmZcbiAgICB0cmFuc2l0aW9uOiAwLjFzXG4gICAgY3Vyc29yOiBwb2ludGVyXG4gICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuXG4gICAgJjpob3ZlclxuICAgICAgICAvL2JhY2tncm91bmQtY29sb3I6IGxpZ2h0LWdyZWVuXG4gICAgICAgIGJveC1zaGFkb3c6IDBweCAzcHggNnB4IHdoaXRlXG4gICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNnB4KVxuXG4gICAgXG4gICAgJjphY3RpdmVcbiAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDBweClcbiAgICAgICAgYm94LXNoYWRvdzogMHB4IDBweCAzcHggI2ZmZlxuICAgIFxuICAgICAgICAiXX0= */

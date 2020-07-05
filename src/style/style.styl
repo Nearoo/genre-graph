@@ -43,7 +43,7 @@ flex-top = {
 // New:
 top-bar-height = 50px
 bottom-bar-height = 100px
-right-bar-width = 350px
+right-bar-width = 250px
 album-size-small = 80px
 
 bottom-bar-left-width = 300px
@@ -54,17 +54,20 @@ playback-buttons-margin = 20px
 
 progress-bar-margin-rl = 20px
 
+font-scale = 1.1
+
 div
   //{border-debug}
+
 
 body, html
   width: 100%
   height: 100%
   color: light-grey
   font-family: 'Roboto', sans-serif
+  background: black
   margin: 0
   padding: 0
-  background: black
 
   &::-webkit-scrollbar
       width: 6px
@@ -79,6 +82,16 @@ a
   
   &:active
     color: dark-grey
+
+
+h2
+  font-size: 12pt * font-scale
+
+h3
+  font-size: 10pt * font-scale
+
+h4
+  font-size: 8pt * font-scale
 
 #main
   {flex-column}

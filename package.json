@@ -6,7 +6,6 @@
     "start": "nodemon --watch app.coffee --watch webpack.config.coffee ./app.coffee"
   },
   "dependencies": {
-    "3d-force-graph": "^1.65.1",
     "@icon/ionicons": "^5.0.1-alpha.0",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
@@ -23,6 +22,8 @@
     "request": "^2.88.2",
     "stylus": "^0.54.7",
     "three": "^0.118.3",
+    "three-forcegraph": "^1.35.0",
+    "three-orbitcontrols": "^2.110.3",
     "three-spritetext": "^1.5.1"
   },
   "devDependencies": {

@@ -10,6 +10,12 @@ client_creds_b64 = Buffer.from(client_id + ":" + client_secret).toString 'base64
 redirect_uri = 'http://localhost:3000/callback'
 state_cookie_key = 'spotify_auth_state'
 
+auth_scopes = ["streaming",
+                "user-modify-playback-state",
+                "user-read-playback-state",
+                "user-read-currently-playing",
+                "user-read-email",
+                "user-read-private"].join ' '
 genRandomStr = (length) =>
     chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
     (
@@ -23,13 +29,11 @@ router = express.Router()
 router.get '/login', (req, res, next) =>
     state = genRandomStr 16
     res.cookie state_cookie_key, state
-    
-    scope = 'streaming user-read-private user-read-email user-modify-playback-state'
     res.redirect 'https://accounts.spotify.com/authorize?' +
         querystring.stringify {
             response_type: 'code',
             client_id: client_id,
-            scope: scope,
+            scope: auth_scopes,
             redirect_uri: redirect_uri,
             state: state
         }
