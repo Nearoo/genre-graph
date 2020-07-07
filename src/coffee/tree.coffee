@@ -192,7 +192,8 @@ class Graph extends EventEmitter
         @camera.far = 1e10
         @camera.position.z = 300
 
-        @renderer = new three.WebGLRenderer { antialias: true }
+        @renderer = new three.WebGLRenderer { antialias: true, alpha: true}
+        @renderer.setClearColor 0x121212, 1
         @parentDomElement.html @renderer.domElement
         @updateSize()
 
@@ -239,10 +240,10 @@ class Graph extends EventEmitter
         [downX, downY] = @mouseButtonDownPos
         [upX, upY] = [ev.clientX, ev.clientY]
         delta = ((upY - downY)**2 + (upX - downX)**2) ** 0.5
-        if delta <= 2 and @onParentDom [upX, upY] 
+        if delta <= 2 and @coordIsOnParentDom [upX, upY] 
             @emit 'click', ev
     
-    onParentDom: ([x, y]) =>
+    coordIsOnParentDom: ([x, y]) =>
         [pW, pH] = [ @parentDomElement.width(), @parentDomElement.height() ]
         offset = @parentDomElement.offset()
         [pX, pY] = [ offset.left, offset.top ]
@@ -283,6 +284,9 @@ class Graph extends EventEmitter
         @camera.aspect = w / h
         @camera.updateProjectionMatrix()
         @renderer.setSize w, h
+        
+        console.log $(@renderer.domElement).attr 'height'
+
     
     onNodeClicked: (node, event) =>
         nodePos = node?.__threeObj?.position

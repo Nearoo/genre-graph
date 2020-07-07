@@ -45,7 +45,7 @@ router.get '/callback', (req, res, next) =>
     storedState = req.cookies?[state_cookie_key]
     if not state? or state isnt storedState
         console.log "State mismatch. Got: \n#{state}\nbut am in:\n#{storedState}"
-        res.redirect '/#' +
+        res.redirect '/' +
             querystring.stringify error: 'state_mismatch'
     else
         res.clearCookie state_cookie_key
@@ -73,7 +73,7 @@ router.get '/callback', (req, res, next) =>
                 request.get options, (error, response, body) =>
                     console.log "Spotify: User #{body.display_name} logged in"
                 
-                res.redirect '/#' + querystring.stringify {
+                res.redirect '/graph#' + querystring.stringify {
                     access_token: access_token
                     refresh_token: refresh_token
                 }
