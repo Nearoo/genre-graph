@@ -36,6 +36,12 @@ class SpotifyAPI extends EventEmitter
             @player.on 'player_state_changed', (state) =>
               @emit 'player-state-changed', state
 
+            # Print errors to log
+            @player.on 'initialization_error', console.error
+            @player.on 'authentication_error', console.error
+            @player.on 'account_error', console.error
+            @player.on 'playback_error', console.error
+
             @player.connect()
           else
             console.log 'User is not logged in, player initialized.'
