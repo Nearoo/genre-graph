@@ -5,9 +5,8 @@ cors = require('cors')
 querystring = require('querystring')
 cookieParser = require('cookie-parser')
 
-{ client_id, client_secret } = require('./spotify.credentials')
+{ client_id, client_secret, redirect_uri } = require('./spotify.credentials')
 client_creds_b64 = Buffer.from(client_id + ":" + client_secret).toString 'base64'
-redirect_uri = 'http://localhost:3000/callback'
 state_cookie_key = 'spotify_auth_state'
 
 auth_scopes = ["streaming",
