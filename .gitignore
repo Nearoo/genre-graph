@@ -65,3 +65,8 @@ yarn.lock
 
 # API Credentials
 *.credentials.coffee
+
+# Generated files
+public/js/app.bundle.js
+public/css/style.css
+public/css/landing.css
