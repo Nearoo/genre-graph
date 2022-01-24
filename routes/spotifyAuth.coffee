@@ -15,6 +15,7 @@ auth_scopes = ["streaming",
                 "user-read-currently-playing",
                 "user-read-email",
                 "user-read-private"].join ' '
+
 genRandomStr = (length) =>
     chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
     (

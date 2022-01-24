@@ -199,22 +199,15 @@ class Graph extends EventEmitter
 
         @control = new CamController @camera, @parentDomElement
 
+        @nodeThreeObjectMap = new Map
         @graph = new ThreeForceGraph()
             .jsonUrl graphJsonUrl
             .nodeThreeObject (node) =>
-                # Collision sphere
-                colGeo = new three.SphereGeometry 20, 23, 23
-                #colMat = new three.MeshBasicMaterial { depthWrite: false, transparent: true, opacity: 0.2}
-                colMat = new three.MeshLambertMaterial { color: 0xfffffff, depthWrite: false, transparent: true, opacity: 0}
-                colObj = new three.Mesh colGeo, colMat
-
-                # Label
-                sprite = new SpriteText ( node.genre ? '🎷' )
-                sprite.textHeight = 16
-                
-                colObj.add sprite
-
-                colObj
+                obj = @createNodeThreeObject node, 'white'
+                @nodeThreeObjectMap.set node.id, obj
+                obj
+        
+        @graph.highlightedNodes = new Set
         
         @scene.add @graph
         
@@ -232,6 +225,21 @@ class Graph extends EventEmitter
 
         @on 'click', @onClickEvent
         @on 'node-clicked', @onNodeClicked
+    
+    createNodeThreeObject: (node, color) =>
+        # Collision sphere
+        colGeo = new three.SphereGeometry 20, 23, 23
+        colMat = new three.MeshBasicMaterial { depthWrite: false, transparent: true, opacity: 0}
+        colObj = new three.Mesh colGeo, colMat
+
+        # Label
+        sprite = new SpriteText ( node.genre ? '🎷' )
+        sprite.textHeight = 16
+        sprite.color = color
+        
+        colObj.add sprite
+        colObj.setColor = (color) => sprite.color = color
+        colObj
     
     onMouseButtonDown: (ev) =>
         @mouseButtonDownPos = [ev.clientX, ev.clientY]
@@ -284,23 +292,33 @@ class Graph extends EventEmitter
         @camera.aspect = w / h
         @camera.updateProjectionMatrix()
         @renderer.setSize w, h
-        
-        console.log $(@renderer.domElement).attr 'height'
-
     
     onNodeClicked: (node, event) =>
         nodePos = node?.__threeObj?.position
         if nodePos?
             @control.setTargetLookAtPosition nodePos
+            neighbours = @_getNeighboursOf node
+            @graph.nodeThreeObject (node_) =>
+                nodeThreeObj = @nodeThreeObjectMap.get node_.id
+                ###
+                if node_ == node or neighbours.has node_
+                    nodeThreeObj.setColor 'red'
+                else
+                    nodeThreeObj.setColor 'white'
+                ###
+                
+                console.log nodeThreeObj
+                nodeThreeObj
+
     
     _getNeighboursOf: (node) =>
         nodeId = node.id
-        res = []
+        res = new Set
         for link in @graph.graphData().links
             if link.source.id is nodeId
-                res.push link.target
+                res.add link.target
             else if link.target.id is nodeId
-                res.push link.source
+                res.add link.source
         res
 
 export { Graph }
